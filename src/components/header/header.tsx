@@ -1,39 +1,14 @@
-import styles from "./header.module.scss";
+// import styles from "./header.module.scss";
 
 export default function Header() {
   return (
     <header id="home">
       <nav>
-        <img src="./images/logo.png" alt="" />
-        <a href="javascript:void(0)" className="mobilenav">
-          <img
-            src="./images/menu.svg"
-            alt=""
-            //  onClick="openmenu()"
-          />
-        </a>
-        <ul className="mobile" id="mobilemenu">
-          <li>
-            <a href="#home">Главная</a>
-          </li>
-          <li>
-            <a href="#theapp">Приложение</a>
-          </li>
-          <li>
-            <a href="#about">О проекте</a>
-          </li>
-          <li>
-            <a href="#problem">Актуальность</a>
-          </li>
-          <li>
-            <a href="#audience">Аудитория</a>
-          </li>
-
-          {/* <li><a href="#benefits">Преимущества</a></li> */}
-          <li>
-            <a href="#contact">Контакты</a>
-          </li>
-        </ul>
+        <img src="images/logo.svg" alt="logo" />
+        {/* <a className="mobilenav" href="javascript:void(0)">
+          <img src="./images/menu.svg" alt="" onClick={() => {}} />
+        </a> */}
+        {/* <ul className="mobile" id="mobilemenu"></ul> */}
         <ul className="menu">
           <li>
             <a href="#home">Главная</a>
@@ -50,18 +25,31 @@ export default function Header() {
           <li>
             <a href="#audience">Аудитория</a>
           </li>
-
-          {/* <li><a href="#benefits">benefits</a></li> */}
+          <li>
+            <a href="#benefits">Преимущества</a>
+          </li>
           <li>
             <a href="#contact">Контакты</a>
           </li>
         </ul>
 
-        {/* <ul class="social" style="display:none">
-                <li><a href="#"><img src="./images/fb.svg" alt=""></a></li>
-                <li><a href="#"><img src="./images/ig.svg" alt=""></a></li>
-                <li><a href="#"><img src="./images/tw.svg" alt=""></a></li>
-            </ul> */}
+        {/* <ul className="social">
+          <li>
+            <a href="#">
+              <img src="./images/fb.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/ig.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/tw.svg" alt="" />
+            </a>
+          </li>
+        </ul> */}
       </nav>
       <p className="topp">Делать добро - просто!</p>
       <h1>Социальный проект для любителей животных</h1>

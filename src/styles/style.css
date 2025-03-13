@@ -1401,12 +1401,12 @@ section h2 {
 }
 
 @media only screen and (min-width: 1300px) {
-  header .topp {
-    /* right: 24rem; */
+  /* header .topp {
+    right: 24rem;
   }
   header h1 {
-    /* right: 25rem; */
-  }
+    right: 25rem;
+  } */
   .section1 .boxs {
     max-width: 140rem;
     margin: 4rem auto;
