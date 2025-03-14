@@ -1,35 +1,53 @@
-// import styles from "./header.module.scss";
+import styles from "./header.module.scss";
 
 export default function Header() {
   return (
-    <header id="home">
-      <nav>
-        <img src="images/logo.svg" alt="logo" />
+    <header className={styles["header"]} id="home">
+      <nav className={styles["header__nav"]}>
+        <img
+          className={styles["header__logo"]}
+          src="images/logo.svg"
+          alt="logo"
+        />
         {/* <a className="mobilenav" href="javascript:void(0)">
           <img src="./images/menu.svg" alt="" onClick={() => {}} />
         </a> */}
         {/* <ul className="mobile" id="mobilemenu"></ul> */}
-        <ul className="menu">
-          <li>
-            <a href="#home">Главная</a>
+        <ul className={styles["header__menu"]}>
+          <li className={styles["header__menu-item"]}>
+            <a className={styles["header__menu-link"]} href="#home">
+              Главная
+            </a>
           </li>
-          <li>
-            <a href="#theapp">Приложение</a>
+          <li className={styles["header__menu-item"]}>
+            <a className={styles["header__menu-link"]} href="#theapp">
+              Приложение
+            </a>
           </li>
-          <li>
-            <a href="#about">О проекте</a>
+          <li className={styles["header__menu-item"]}>
+            <a className={styles["header__menu-link"]} href="#about">
+              О проекте
+            </a>
           </li>
-          <li>
-            <a href="#problem">Актуальность</a>
+          <li className={styles["header__menu-item"]}>
+            <a className={styles["header__menu-link"]} href="#problem">
+              Актуальность
+            </a>
           </li>
-          <li>
-            <a href="#audience">Аудитория</a>
+          <li className={styles["header__menu-item"]}>
+            <a className={styles["header__menu-link"]} href="#audience">
+              Аудитория
+            </a>
           </li>
-          <li>
-            <a href="#benefits">Преимущества</a>
+          <li className={styles["header__menu-item"]}>
+            <a className={styles["header__menu-link"]} href="#benefits">
+              Преимущества
+            </a>
           </li>
-          <li>
-            <a href="#contact">Контакты</a>
+          <li className={styles["header__menu-item"]}>
+            <a className={styles["header__menu-link"]} href="#contact">
+              Контакты
+            </a>
           </li>
         </ul>
 
@@ -51,27 +69,6 @@ export default function Header() {
           </li>
         </ul> */}
       </nav>
-      <p className="topp">Делать добро - просто!</p>
-      <h1>Социальный проект для любителей животных</h1>
-      <div className="buttons">
-        <p>Скачать приложение</p>
-        <a
-          target="_blank"
-          href="https://redirect.appmetrica.yandex.com/serve/965008352398629561"
-        >
-          <img src="./images/google.png" alt="" />
-        </a>
-        <a
-          target="_blank"
-          href="https://redirect.appmetrica.yandex.com/serve/748835575452230211"
-        >
-          <img src="./images/apple.png" alt="" />
-        </a>
-      </div>
-      <div className="bottomimg">
-        <img src="./images/petcare11.png" alt="" />
-      </div>
-      <img src="./images/toppet.png" alt="" className="floatinglogo" />
     </header>
   );
 }

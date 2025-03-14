@@ -1,75 +1,27 @@
 .header {
-  // Стили для header
-}
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: white;
+  }
 
-.nav {
-  // Стили для навигации
-}
+  &__menu {
+    display: flex;
+    gap: 10px;
 
-.logo {
-  // Стили для логотипа
-}
+    &-link {
+      color: #392413;
+      font-size: 1.4rem;
+      font-weight: 700;
+      padding: 1rem 2rem;
 
-.mobileNavToggle {
-  // Стили для кнопки мобильного меню
-}
-
-.menuIcon {
-  // Стили для иконки меню
-}
-
-.mobileMenu {
-  // Стили для мобильного меню
-}
-
-.desktopMenu {
-  // Стили для десктопного меню
-}
-
-.menu {
-  // Общие стили для меню
-}
-
-.menuItem {
-  // Стили для элементов меню
-}
-
-.menuLink {
-  // Стили для ссылок в меню
-}
-
-.slogan {
-  // Стили для слогана
-}
-
-.title {
-  // Стили для заголовка
-}
-
-.downloadSection {
-  // Стили для секции скачивания
-}
-
-.downloadText {
-  // Стили для текста "Скачать приложение"
-}
-
-.storeLink {
-  // Стили для ссылок на магазины
-}
-
-.storeIcon {
-  // Стили для иконок магазинов
-}
-
-.heroImage {
-  // Стили для контейнера изображения
-}
-
-.heroImageInner {
-  // Стили для самого изображения
-}
-
-.floatingLogo {
-  // Стили для плавающего логотипа
+      &:hover {
+        background-color: #8bc53f;
+        border-radius: 0px 20px 20px 20px;
+        color: white;
+      }
+    }
+  }
 }

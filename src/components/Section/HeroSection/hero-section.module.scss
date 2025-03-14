@@ -1,0 +1,71 @@
+/* Основной блок секции */
+.hero {
+  height: 735px;
+  background-image: url("images/background.png");
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem 2rem;
+  color: #fff;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+
+  &__slogan {
+    font-weight: 700;
+    font-size: 3.75rem;
+    letter-spacing: -1px;
+    word-spacing: 2px;
+  }
+
+  &__title {
+    font-size: 5rem;
+    line-height: 46px;
+    letter-spacing: -1px;
+  }
+
+  &__logo {
+    // width: 240px;
+    // height: 240px;
+  }
+
+  &__download {
+    //   display: flex;
+    //   gap: 15px;
+  }
+
+  &__download-label {
+    // display: block;
+    font-size: 2.4rem;
+    font-weight: 700;
+    // color: white;
+    //   margin-bottom: 1rem;
+    gap: 1rem;
+  }
+
+  &__download-link {
+    height: 50px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__download-image {
+    width: 174px;
+    // height: 80px;
+  }
+}
