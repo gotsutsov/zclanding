@@ -1,0 +1,110 @@
+.audienceSection {
+  padding: 80px 20px;
+  background-color: rgb(197, 227, 187);
+  outline: 5px dashed rgb(108, 65, 250);
+  margin-bottom: 24px;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  &__subtitle {
+    font-size: 1.125rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+  }
+
+  &__groups {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+  }
+
+  &__group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  &__groupText {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  &__bottom {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+  }
+
+  &__imageWrapper {
+    flex: 1;
+    text-align: center;
+  }
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    border-radius: 8px; /* если нужен скруглённый угол */
+  }
+
+  &__goals {
+    flex: 1;
+  }
+
+  &__goal,
+  &__implementation {
+    margin-bottom: 1.5rem;
+  }
+
+  &__goalTitle,
+  &__implementationTitle {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__goalText,
+  &__implementationText {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    &__groups {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__bottom {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__imageWrapper {
+      margin-bottom: 2rem;
+    }
+  }
+}

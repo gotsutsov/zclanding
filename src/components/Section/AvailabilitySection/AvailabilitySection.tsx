@@ -1,50 +1,76 @@
-// import styles from "./availability-section.module.scss";
+import styles from "./availability-section.module.scss";
 
 export default function AvailabilitySection() {
   return (
-    <section className="section6">
-      <h2>Приложение уже доступно на телефонах</h2>
-      <div className="boxs">
-        <div className="box">
-          <img src="./images/icon14.svg" alt="" />
-          <p>Регистрация и создание профиля пользователя</p>
-        </div>
-        <div className="box">
-          <img src="./images/icon17.svg" alt="" />
-          <p>Добавление медиа (фото, видео) в профиль пользователя</p>
-        </div>
-        <div className="box">
-          <img src="./images/icon15.svg" alt="" />
-          <p>Добавление питомцев в профиль пользователя</p>
-        </div>
-        <div className="box">
-          <img src="./images/icon18.svg" alt="" />
-          <p>Добавление/удаление объявлений в (из) избранное</p>
-        </div>
-        <div className="box">
-          <img src="./images/icon16.svg" alt="" />
-          <p>
-            Создание тематических объявлений, включающих информацию о животном,
-            медиа материалы, геолокацию и прочую информацию
-          </p>
-        </div>
-        <div className="box">
-          <img src="./images/icon19.svg" alt="" />
-          <p>
-            Просмотр и комментирование объявлений, в том числе просмотр
-            объявлений на карте
-          </p>
-        </div>
+    <section className={styles["availabilitySection"]}>
+      <div className={styles["availabilitySection__container"]}>
+        <h2 className={styles["availabilitySection__title"]}>
+          Приложение уже доступно на телефонах
+        </h2>
 
-        {/* <div className="box">
-        <img src="./images/icon20.svg" alt=""/>
-        <p>
-        </p>
-    </div> */}
+        <div className={styles["availabilitySection__content"]}>
+          <div className={styles["availabilitySection__imageWrapper"]}>
+            <img
+              className={styles["availabilitySection__image"]}
+              src="images/2ip13.png"
+              alt="Смартфон с приложением ЗооКлик"
+            />
+          </div>
+
+          <ul className={styles["availabilitySection__list"]}>
+            <li className={styles["availabilitySection__item"]}>
+              <div className={styles["availabilitySection__icon"]}>
+                <img src="images/icon14.svg" alt="" />
+              </div>
+              <p className={styles["availabilitySection__text"]}>
+                Регистрация и создание профиля пользователя
+              </p>
+            </li>
+            <li className={styles["availabilitySection__item"]}>
+              <div className={styles["availabilitySection__icon"]}>
+                <img src="images/icon15.svg" alt="" />
+              </div>
+              <p className={styles["availabilitySection__text"]}>
+                Добавление питомцев в профиль пользователя
+              </p>
+            </li>
+            <li className={styles["availabilitySection__item"]}>
+              <div className={styles["availabilitySection__icon"]}>
+                <img src="images/icon16.svg" alt="" />
+              </div>
+              <p className={styles["availabilitySection__text"]}>
+                Добавление медиа (фото, видео) в профиль пользователя
+              </p>
+            </li>
+            <li className={styles["availabilitySection__item"]}>
+              <div className={styles["availabilitySection__icon"]}>
+                <img src="mages/icon17.svg" alt="" />
+              </div>
+              <p className={styles["availabilitySection__text"]}>
+                Создание тематических сообществ, включающих комментарии,
+                медиа-материалы и другие инструменты
+              </p>
+            </li>
+            <li className={styles["availabilitySection__item"]}>
+              <div className={styles["availabilitySection__icon"]}>
+                <img src="images/icon18.svg" alt="" />
+              </div>
+              <p className={styles["availabilitySection__text"]}>
+                Публикация и удаление объявлений
+              </p>
+            </li>
+            <li className={styles["availabilitySection__item"]}>
+              <div className={styles["availabilitySection__icon"]}>
+                <img src="images/icon19.svg" alt="" />
+              </div>
+              <p className={styles["availabilitySection__text"]}>
+                Просмотр и комментирование объявлений, а также отслеживание их
+                на карте
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
-      <img className="ipmobile" src="./images/back3.png" alt="" />
-      <img className="ipdesk" src="./images/2ip13.png" alt="" />
-      <img className="floatinglogo" src="./images/petcare11.png" alt="" />
     </section>
   );
 }

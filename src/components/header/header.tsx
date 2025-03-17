@@ -20,12 +20,12 @@ export default function Header() {
             </a>
           </li>
           <li className={styles["header__menu-item"]}>
-            <a className={styles["header__menu-link"]} href="#theapp">
+            <a className={styles["header__menu-link"]} href="#product">
               Приложение
             </a>
           </li>
           <li className={styles["header__menu-item"]}>
-            <a className={styles["header__menu-link"]} href="#about">
+            <a className={styles["header__menu-link"]} href="#mission">
               О проекте
             </a>
           </li>

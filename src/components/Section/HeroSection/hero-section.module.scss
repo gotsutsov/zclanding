@@ -2,7 +2,6 @@
 .hero {
   height: 735px;
   background-image: url("images/background.png");
-  background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -11,6 +10,9 @@
   justify-content: center;
   padding: 1.5rem 2rem;
   color: #fff;
+  background-color: rgb(197, 227, 187);
+  outline: 5px dashed rgb(108, 65, 250);
+  margin-bottom: 24px;
 
   &__container {
     display: flex;

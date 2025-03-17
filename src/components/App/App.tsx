@@ -25,7 +25,7 @@ export default function App() {
         <AvailabilitySection />
         <ReviewsSection />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
