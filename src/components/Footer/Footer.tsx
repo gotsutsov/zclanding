@@ -1,89 +1,77 @@
+import styles from "./footer.module.scss";
+
 export default function Footer() {
   return (
-    <footer className="section10" id="contact">
-      <div className="back"></div>
-      <div className="container">
-        <img className="topimg" src="./images/image3.png" alt="" />
-        <span>Как с нами связаться</span>
-        {/* <h2></h2> */}
-        <p>
+    <footer className={styles["footer"]} id="contact">
+      <div className={styles["footer-content"]}>
+        <h2 className={styles["footer-title"]}>Как с нами связаться</h2>
+        <p className={styles["footer-description"]}>
           Мы будем рады любой обратной связи от вас – можете делиться своим
           опытом использования приложения, с кем или с чем удалось познакомиться
           благодаря нему
         </p>
-        {/* <p>Также можете предлагать свои идеи для развития социальной сети и писать о том, чего, на ваш взгляд, сейчас не хватает</p> */}
-        <div className="buttons">
-          <a href="#">
-            <img src="./images/google.png" alt="" />
+        <div className={styles["footer-app-links"]}>
+          <a href="#" className={styles["google-play-link"]}>
+            <img src="images/google-play.svg" alt="Google Play" />
           </a>
-          <a href="#">
-            <img src="./images/apple.png" alt="" />
+          <a href="#" className={styles["app-store-link"]}>
+            <img src="images/app-store.svg" alt="App Store" />
           </a>
         </div>
-        <div className="buttons">
-          <p>
-            <a
-              href="https://zoo-click.com/documents/user_agreement.pdf"
-              target="_blank"
-              // style="font-size: 12px"
-            >
-              Пользовательское соглашение
-            </a>
-            <a
-              href="https://zoo-click.com/documents/personal_data.pdf"
-              target="_blank"
-              // style="font-size: 12px"
-            >
-              Соглашение об обработке персональных данных
-            </a>
-            <a
-              href="https://zoo-click.com/documents/offer.pdf"
-              target="_blank"
-              // style="font-size: 12px"
-            >
-              Оферта
-            </a>
-            <a
-              href="https://zoo-click.com/documents/paid_services.pdf"
-              target="_blank"
-              // style="font-size: 12px"
-            >
-              Описание платных услуг
-            </a>
-          </p>
+        <nav className={styles["footer-nav"]}>
+          <a
+            href="https://zoo-click.com/documents/user_agreement.pdf"
+            target="_blank"
+          >
+            Пользовательское соглашение
+          </a>
+          <a
+            href="https://zoo-click.com/documents/personal_data.pdf"
+            target="_blank"
+          >
+            Соглашение об обработке персональных данных
+          </a>
+          <a href="https://zoo-click.com/documents/offer.pdf" target="_blank">
+            Оферта
+          </a>
+          <a
+            href="https://zoo-click.com/documents/paid_services.pdf"
+            target="_blank"
+          >
+            Описание платных услуг
+          </a>
+        </nav>
+      </div>
+
+      <div className={styles["footer-bottom"]}>
+        <div className={styles["footer-contact"]}>
+          <div className={styles["footer-icone"]}>
+            <img src="images/mail.svg" alt="mail" />
+          </div>
+          <span>
+            Email: <a href="mailto:info@zoo.ru">info@zoo.ru</a>
+          </span>
+          <div className={styles["footer-icone"]}>
+            <img src="images/phone.svg" alt="phone" />
+          </div>
+          <span>
+            Телефон: <a href="tel:88004443484">8 800 444 34 84</a>
+          </span>
         </div>
-        <div className="box">
-          <div className="i">
-            <div className="icon">
-              <img src="./images/mail.svg" alt="" />
-            </div>
-            <div className="text">
-              <p>Email</p>
-              <p>info@zoo-click.com</p>
-            </div>
-          </div>
-          <div className="i">
-            <div className="icon">
-              <img src="./images/phone.svg" alt="" />
-            </div>
-            <div className="text">
-              <p>Телефон</p>
-              <p>88004443484</p>
-            </div>
-          </div>
+        <div className={styles["footer-company-info"]}>
+          <span>©2024 Сервис Клик ОГРН: 1227700230284 ИНН: 9729232644</span>
+          <span>
+            © 2024 Тарасов Александр Викторович Фотограф с 20 летним стажем
+            Сотрудничество с журналами «Лиза», «Гороскоп», Женское здоровье»,
+            «Стар-Хит», «Самая», «Magazine», тесное сотрудничество с «Аква
+            Марис» и «Велком»
+          </span>
         </div>
       </div>
-      <span className="copyr">© 2024 Сервис Клик</span>
-      <span className="copyr">ОГРН:1227700230284 ИНН: 9729322644</span>
-      <span
-        className="copyr"
-        // style="font-size:1.2rem"
-      >
-        © 2024 Тарасов Александр Викторович Фотограф с 20 летним стажем
-        Сотрудничество с журналами «Лиза», «Гороскоп», Женское здоровье»,
-        «Стар-Хит», «Самая», «Magazine», тесное сотрудничество с «Аква Марис» и
-        «Велком»
-      </span>
+
+      <div className={styles["footer-dog-image"]}>
+        <img src="images/image3.png" alt="Dog" />
+      </div>
     </footer>
   );
 }

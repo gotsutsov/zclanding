@@ -1,0 +1,46 @@
+.footer {
+  padding: 40px;
+  text-align: center;
+  background-color: rgb(197, 227, 187);
+  outline: 3px dashed rgb(108, 65, 250);
+  outline-offset: -3px;
+}
+.footer-content {
+  margin-bottom: 20px;
+}
+.footer-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.footer-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.footer-app-links img {
+  height: 40px;
+}
+.footer-nav a {
+  display: block;
+  margin: 5px 0;
+  color: #006400;
+  text-decoration: none;
+}
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+.footer-icone {
+  width: 50px;
+}
+.footer-bottom {
+  font-size: 14px;
+  margin-top: 20px;
+}
+.footer-contact span,
+.footer-company-info span {
+  display: block;
+  margin: 3px 0;
+}
+.footer-dog-image {
+  width: 400px;
+}
