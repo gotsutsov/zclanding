@@ -44,7 +44,7 @@ export default function AvailabilitySection() {
             </li>
             <li className={styles["availabilitySection__item"]}>
               <div className={styles["availabilitySection__icon"]}>
-                <img src="mages/icon17.svg" alt="" />
+                <img src="images/icon17.svg" alt="" />
               </div>
               <p className={styles["availabilitySection__text"]}>
                 Создание тематических сообществ, включающих комментарии,
