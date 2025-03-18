@@ -1,93 +1,90 @@
 .relevanceSection {
-  padding: 80px 20px;
-  background-color: rgb(197, 227, 187);
-  outline: 5px dashed rgb(108, 65, 250);
-  margin-bottom: 24px;
+  margin-bottom: 128px;
 
   &__container {
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
     display: flex;
+    justify-content: center;
     gap: 40px;
-    align-items: flex-start;
-    justify-content: space-between;
   }
 
   &__content {
     flex: 1;
+    align-self: center;
   }
 
   &__title {
-    font-size: 2rem;
+    font-size: 3.5rem;
+    color: #626262;
+    letter-spacing: -0.1rem;
     margin-bottom: 1rem;
-    font-weight: 700;
   }
 
   &__highlight {
-    font-size: 1.125rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    line-height: 1.4;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 5.2rem;
+    margin-bottom: 6rem;
   }
 
   &__text {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 0;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+
+    &:last-child {
+      margin-top: 24px;
+    }
   }
 
   &__stats {
     flex: 1;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
   }
 
   &__statItem {
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-
+    height: 30rem;
+    padding: 2.5rem 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    &:first-child {
+      background: #ecf6e0;
+      border-radius: 165.5px 165.5px 0px 0px;
+    }
+
+    &:last-child {
+      background: #ecf6e0;
+      border-radius: 0px 0px 165.5px 165.5px;
+    }
   }
 
   &__statIcon {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
-
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
+    margin-bottom: 1rem;
   }
 
   &__statValue {
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    color: #333;
+    font-size: 3rem;
+    margin-bottom: 1rem;
   }
 
   &__statLabel {
-    font-size: 0.95rem;
-    line-height: 1.4;
-    color: #666;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    text-align: center;
   }
 
   @media (max-width: 768px) {
-    &__container {
-      flex-direction: column;
-      gap: 20px;
-    }
+    // &__container {
+    //   flex-direction: column;
+    //   gap: 20px;
+    // }
 
-    &__stats {
-      grid-template-columns: 1fr;
-    }
+    // &__stats {
+    //   grid-template-columns: 1fr;
+    // }
   }
 }

@@ -2,7 +2,7 @@ import styles from "./header.module.scss";
 
 export default function Header() {
   return (
-    <header className={styles["header"]} id="home">
+    <header className={styles["header"]}>
       <nav className={styles["header__nav"]}>
         <img
           className={styles["header__logo"]}
@@ -15,7 +15,7 @@ export default function Header() {
         {/* <ul className="mobile" id="mobilemenu"></ul> */}
         <ul className={styles["header__menu"]}>
           <li className={styles["header__menu-item"]}>
-            <a className={styles["header__menu-link"]} href="#home">
+            <a className={styles["header__menu-link"]} href="#">
               Главная
             </a>
           </li>
@@ -30,7 +30,7 @@ export default function Header() {
             </a>
           </li>
           <li className={styles["header__menu-item"]}>
-            <a className={styles["header__menu-link"]} href="#problem">
+            <a className={styles["header__menu-link"]} href="#relevance">
               Актуальность
             </a>
           </li>
@@ -42,6 +42,11 @@ export default function Header() {
           <li className={styles["header__menu-item"]}>
             <a className={styles["header__menu-link"]} href="#benefits">
               Преимущества
+            </a>
+          </li>
+          <li className={styles["header__menu-item"]}>
+            <a className={styles["header__menu-link"]} href="#reviews">
+              Отзывы
             </a>
           </li>
           <li className={styles["header__menu-item"]}>

@@ -70,7 +70,7 @@ export default function Footer() {
       </div>
 
       <div className={styles["footer-dog-image"]}>
-        <img src="images/image3.png" alt="Dog" />
+        <img src="images/doggy.avif" alt="dog" loading="lazy" />
       </div>
     </footer>
   );

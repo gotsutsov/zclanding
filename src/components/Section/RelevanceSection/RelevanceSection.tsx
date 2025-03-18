@@ -2,7 +2,7 @@ import styles from "./relevance-section.module.scss";
 
 export default function RelevanceSection() {
   return (
-    <section className={styles["relevanceSection"]}>
+    <section className={styles["relevanceSection"]} id={"relevance"}>
       <div className={styles["relevanceSection__container"]}>
         <div className={styles["relevanceSection__content"]}>
           <h2 className={styles["relevanceSection__title"]}>
@@ -13,10 +13,13 @@ export default function RelevanceSection() {
             последние три года*
           </p>
           <p className={styles["relevanceSection__text"]}>
-            Эти цифры говорят о том, что создание универсального приложения для
-            любителей животных будет полезно как самим животным, так и их
-            владельцам, а также приютам, волонтёрам и ветклиникам. В этом вам
-            поможет наше приложение ЗооКлик!
+            Все эти цифры говорят о том, что создание универсального приложения
+            для любителей животных будет полезно как самим животным, нуждающимся
+            в помощи, так и людям, находящимся в поисках «усатого члена семьи»
+            или верного друга.
+          </p>
+          <p className={styles["relevanceSection__text"]}>
+            В этом Вам поможет наше приложение ЗооКлик!
           </p>
         </div>
 
@@ -45,7 +48,7 @@ export default function RelevanceSection() {
             <div className={styles["relevanceSection__statIcon"]}>
               <img src="images/icon3.svg" alt="Иконка приюта" />
             </div>
-            <h3 className={styles["relevanceSection__statValue"]}>200 тыс</h3>
+            <h3 className={styles["relevanceSection__statValue"]}>200 тысяч</h3>
             <p className={styles["relevanceSection__statLabel"]}>
               Питомцев пропадает в год в РФ
             </p>
@@ -55,9 +58,10 @@ export default function RelevanceSection() {
             <div className={styles["relevanceSection__statIcon"]}>
               <img src="images/icon4.svg" alt="Иконка животных" />
             </div>
-            <h3 className={styles["relevanceSection__statValue"]}>650 тыс</h3>
+            <h3 className={styles["relevanceSection__statValue"]}>650 тысяч</h3>
             <p className={styles["relevanceSection__statLabel"]}>
-              Бездомных животных находятся в приютах России
+              Бездомных животных находятся в приютах
+              <br /> России
             </p>
           </div>
         </div>

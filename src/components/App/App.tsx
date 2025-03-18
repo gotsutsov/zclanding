@@ -14,6 +14,7 @@ import "./app.scss";
 export default function App() {
   return (
     <>
+      {/* <img className="sticky-image" src="images/f1.svg" alt="Sticky Image" /> */}
       <Header />
       <main>
         <HeroSection />

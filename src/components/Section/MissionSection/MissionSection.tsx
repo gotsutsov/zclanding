@@ -4,7 +4,7 @@ export default function MissionSection() {
   return (
     <section className={styles["missionSection"]} id={"mission"}>
       <div className={styles["missionSection__container"]}>
-        <h2 className={styles["missionSection__heading"]}>
+        <h2 className={styles["missionSection__title"]}>
           Почему это важно для нас
         </h2>
         <p className={styles["missionSection__subtitle"]}>

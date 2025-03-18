@@ -73,8 +73,9 @@ export default function BenefitsSection() {
           <div className={styles["benefitsSection__imageWrapper"]}>
             <img
               className={styles["benefitsSection__image"]}
-              src="images/image.png"
+              src="images/chunya.avif"
               alt="Девушка с собакой"
+              loading="lazy"
             />
           </div>
         </div>

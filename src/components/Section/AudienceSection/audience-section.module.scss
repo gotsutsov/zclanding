@@ -1,35 +1,36 @@
 .audienceSection {
-  padding: 80px 20px;
-  background-color: rgb(197, 227, 187);
-  outline: 5px dashed rgb(108, 65, 250);
-  margin-bottom: 24px;
+  margin-bottom: 128px;
 
   &__container {
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
   }
 
   &__title {
-    font-size: 2rem;
+    font-size: 3.5rem;
+    line-height: 8rem;
+    color: #626262;
+    text-align: center;
+    letter-spacing: -0.1rem;
     margin-bottom: 1rem;
-    font-weight: 700;
   }
 
   &__subtitle {
-    font-size: 1.125rem;
-    line-height: 1.4;
-    margin-bottom: 2rem;
+    font-size: 4.8rem;
+    line-height: 5.2rem;
+    text-align: center;
+    letter-spacing: -0.2rem;
+    margin-bottom: 4rem;
   }
 
   &__groups {
     display: flex;
-    gap: 20px;
-    justify-content: flex-start;
-    margin-bottom: 2rem;
+    justify-content: space-evenly;
+    margin-bottom: 6rem;
   }
 
   &__group {
-    flex: 1;
+    width: 24rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,38 +38,30 @@
   }
 
   &__icon {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 10px;
-
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
+    // width: 80px;
+    // flex-shrink: 1;
+    margin-bottom: 2rem;
   }
 
   &__groupText {
-    font-size: 1rem;
-    line-height: 1.4;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    letter-spacing: -0.1rem;
   }
 
   &__bottom {
     display: flex;
-    gap: 30px;
-    align-items: flex-start;
+    align-items: center;
+    gap: 6rem;
   }
 
   &__imageWrapper {
     flex: 1;
-    text-align: center;
+    // text-align: center;
   }
 
   &__image {
-    max-width: 100%;
-    height: auto;
-    display: inline-block;
-    border-radius: 8px; /* если нужен скруглённый угол */
+    border-radius: 16px;
   }
 
   &__goals {
@@ -77,34 +70,37 @@
 
   &__goal,
   &__implementation {
-    margin-bottom: 1.5rem;
+    margin-bottom: 3.8rem;
   }
 
   &__goalTitle,
   &__implementationTitle {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 4.8rem;
+    line-height: 5.2rem;
+    letter-spacing: -0.1rem;
+    margin-bottom: 1.7rem;
   }
 
   &__goalText,
   &__implementationText {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    letter-spacing: -0.1rem;
   }
 
   @media (max-width: 768px) {
-    &__groups {
-      flex-direction: column;
-      align-items: center;
-    }
+    // &__groups {
+    //   flex-direction: column;
+    //   align-items: center;
+    // }
 
-    &__bottom {
-      flex-direction: column;
-      align-items: center;
-    }
+    // &__bottom {
+    //   flex-direction: column;
+    //   align-items: center;
+    // }
 
-    &__imageWrapper {
-      margin-bottom: 2rem;
-    }
+    // &__imageWrapper {
+    //   margin-bottom: 2rem;
+    // }
   }
 }

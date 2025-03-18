@@ -45,8 +45,9 @@ export default function AudienceSection() {
           <div className={styles["audienceSection__imageWrapper"]}>
             <img
               className={styles["audienceSection__image"]}
-              src="images/box.png"
+              src="images/buba.avif"
               alt="Владелец питомца с собакой"
+              loading="lazy"
             />
           </div>
 
