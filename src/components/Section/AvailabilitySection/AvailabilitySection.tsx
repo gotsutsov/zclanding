@@ -4,9 +4,10 @@ export default function AvailabilitySection() {
   return (
     <section className={styles["availabilitySection"]}>
       <div className={styles["availabilitySection__container"]}>
-        <h2 className={styles["availabilitySection__title"]}>
+        <h2 className={styles["availabilitySection__title"]}>Наличие</h2>
+        <p className={styles["availabilitySection__subtitle"]}>
           Приложение уже доступно на телефонах
-        </h2>
+        </p>
 
         <div className={styles["availabilitySection__content"]}>
           <div className={styles["availabilitySection__imageWrapper"]}>
@@ -47,8 +48,8 @@ export default function AvailabilitySection() {
                 <img src="images/icon17.svg" alt="" />
               </div>
               <p className={styles["availabilitySection__text"]}>
-                Создание тематических сообществ, включающих комментарии,
-                медиа-материалы и другие инструменты
+                Создание тематических объявлений, включающих информацию о
+                животном, медиа материалы, геолокацию и прочую информацию
               </p>
             </li>
             <li className={styles["availabilitySection__item"]}>
@@ -56,7 +57,7 @@ export default function AvailabilitySection() {
                 <img src="images/icon18.svg" alt="" />
               </div>
               <p className={styles["availabilitySection__text"]}>
-                Публикация и удаление объявлений
+                Добавление/удаление объявлений в (из) избранное
               </p>
             </li>
             <li className={styles["availabilitySection__item"]}>
@@ -64,8 +65,8 @@ export default function AvailabilitySection() {
                 <img src="images/icon19.svg" alt="" />
               </div>
               <p className={styles["availabilitySection__text"]}>
-                Просмотр и комментирование объявлений, а также отслеживание их
-                на карте
+                Просмотр и комментирование объявлений, в том числе просмотр
+                объявлений на карте
               </p>
             </li>
           </ul>

@@ -1,7 +1,8 @@
-/* Основной блок секции */
 .hero {
+  // max-width: 1280px;
   height: 735px;
-  background-image: url("/public/images/back-hero.png");
+  // margin: 0 auto;
+  background-image: url("/images/back-hero.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -10,8 +11,7 @@
   justify-content: center;
   padding: 1.5rem 2rem;
   color: #fff;
-  outline: 5px dashed rgb(108, 65, 250);
-  margin-bottom: 24px;
+  margin-bottom: 128px;
 
   &__container {
     display: flex;

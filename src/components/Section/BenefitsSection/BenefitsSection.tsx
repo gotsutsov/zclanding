@@ -16,11 +16,19 @@ export default function BenefitsSection() {
           <button
             className={`${styles["benefitsSection__tab"]} ${styles["benefitsSection__tab--active"]}`}
           >
-            <img src="images/buttonicon.svg" alt="Иконка владельцев питомцев" />
+            <img
+              src="images/buttonicon.svg"
+              alt="Иконка владельцев питомцев"
+              loading="lazy"
+            />
             Владельцы питомцев
           </button>
           <button className={styles["benefitsSection__tab"]}>
-            <img src="images/buttonicon2.svg" alt="Иконка для бизнеса" />
+            <img
+              src="images/buttonicon2.svg"
+              alt="Иконка для бизнеса"
+              loading="lazy"
+            />
             Для бизнеса
           </button>
         </div>
