@@ -9,6 +9,7 @@
   }
 
   &__content {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,7 +45,10 @@
   }
 
   &__image {
-    flex-shrink: 0;
+    flex-shrink: 1;
+    align-self: center;
+    width: clamp(200px, 50vw, 568px);
+    height: auto;
   }
 
   @media (max-width: 1399.98px) {
@@ -53,8 +57,9 @@
   }
 
   @media (max-width: 1199.98px) {
-    /* стили для экранов меньше 1200px */
-    // Устройства Large (настольные компьютеры, менее 1200 пикселей)
+    &__container {
+      flex-direction: column;
+    }
   }
 
   @media (max-width: 991.98px) {
@@ -68,7 +73,9 @@
   }
 
   @media (max-width: 575.98px) {
-    /* стили для экранов меньше 576px */
-    // Устройства X-Small (портретные телефоны, менее 576 пикселей)
+    &__list {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
   }
 }
