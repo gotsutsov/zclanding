@@ -2,7 +2,7 @@ import styles from "./availability-section.module.scss";
 
 export default function AvailabilitySection() {
   return (
-    <section className={styles["availabilitySection"]}>
+    <section className={styles["availabilitySection"]} id={"availability"}>
       <div className={styles["availabilitySection__container"]}>
         <div className={styles["availabilitySection__titleWrapper"]}>
           <h2 className={styles["availabilitySection__title"]}>Наличие</h2>

@@ -1,7 +1,7 @@
 @use "/src/styles/mixins" as mixin;
 
 .missionSection {
-  margin-bottom: 128px;
+  margin-bottom: 96px;
 
   &__title {
     @include mixin.title-styles(center);

@@ -16,7 +16,7 @@ export default function App() {
     <>
       {/* <img className="sticky-image" src="images/f1.svg" alt="Sticky Image" /> */}
       <Header />
-      <main>
+      <main className="main">
         <HeroSection />
         <ProductSection />
         <MissionSection />

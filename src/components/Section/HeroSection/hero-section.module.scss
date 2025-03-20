@@ -1,6 +1,6 @@
 .hero {
   // max-width: 1280px;
-  height: 735px;
+  // height: 735px;
   // margin: 0 auto;
   background-image: url("/images/back-hero.png");
   background-repeat: no-repeat;
@@ -11,7 +11,7 @@
   justify-content: center;
   padding: 1.5rem 2rem;
   color: #fff;
-  margin-bottom: 128px;
+  margin-bottom: 96px;
 
   &__container {
     display: flex;
@@ -29,13 +29,13 @@
     font-weight: 700;
     font-size: 3.75rem;
     letter-spacing: -1px;
-    word-spacing: 2px;
+    // word-spacing: 2px;
   }
 
   &__title {
     font-size: 5rem;
     line-height: 46px;
-    letter-spacing: -1px;
+    letter-spacing: -0.1rem;
   }
 
   &__logo {
@@ -43,25 +43,23 @@
     // height: 240px;
   }
 
-  &__download {
-    //   display: flex;
-    //   gap: 15px;
-  }
-
   &__download-label {
-    // display: block;
     font-size: 2.4rem;
     font-weight: 700;
-    // color: white;
-    //   margin-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  &__download {
+    display: flex;
     gap: 1rem;
   }
 
   &__download-link {
-    height: 50px;
+    // height: 50px;
 
     &:hover {
       opacity: 0.8;
+      cursor: alias;
     }
   }
 

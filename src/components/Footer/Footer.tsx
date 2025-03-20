@@ -10,6 +10,7 @@ export default function Footer() {
           опытом использования приложения, с кем или с чем удалось познакомиться
           благодаря нему
         </p>
+
         <div className={styles["footer-app-links"]}>
           <a href="#" className={styles["google-play-link"]}>
             <img src="images/google-play.svg" alt="Google Play" />
@@ -18,6 +19,7 @@ export default function Footer() {
             <img src="images/app-store.svg" alt="App Store" />
           </a>
         </div>
+
         <nav className={styles["footer-nav"]}>
           <a
             href="https://zoo-click.com/documents/user_agreement.pdf"

@@ -14,14 +14,15 @@ export default function HeroSection() {
               <br /> животных
             </h1>
           </div>
-          <img
+          {/* <img
             className={styles["hero__logo"]}
             src="./images/toppet.png"
             alt="Логотип"
-          />
+          /> */}
         </div>
+
+        <p className={styles["hero__download-label"]}>Скачать приложение</p>
         <div className={styles["hero__download"]}>
-          <p className={styles["hero__download-label"]}>Скачать приложение</p>
           <a
             className={styles["hero__download-link"]}
             target="_blank"
