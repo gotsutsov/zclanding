@@ -4,13 +4,15 @@ export default function MissionSection() {
   return (
     <section className={styles["missionSection"]} id={"mission"}>
       <div className={styles["missionSection__container"]}>
-        <h2 className={styles["missionSection__title"]}>
-          Почему это важно для нас
-        </h2>
-        <p className={styles["missionSection__subtitle"]}>
-          Любовь к животным — вот что побудило нас создать проект ЗооКлик и
-          разработать мобильное приложение
-        </p>
+        <div className={styles["missionSection__titleWrapper"]}>
+          <h2 className={styles["missionSection__title"]}>
+            Почему это важно для нас
+          </h2>
+          <h3 className={styles["missionSection__subtitle"]}>
+            Любовь к животным — вот что побудило нас создать проект ЗооКлик и
+            разработать мобильное приложение
+          </h3>
+        </div>
 
         <div className={styles["missionSection__cards"]}>
           <article className={styles["missionSection__card"]}>

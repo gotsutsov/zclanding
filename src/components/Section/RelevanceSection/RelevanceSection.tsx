@@ -4,14 +4,14 @@ export default function RelevanceSection() {
   return (
     <section className={styles["relevanceSection"]} id={"relevance"}>
       <div className={styles["relevanceSection__container"]}>
-        <div className={styles["relevanceSection__content"]}>
+        <div className={styles["relevanceSection__titleWrapper"]}>
           <h2 className={styles["relevanceSection__title"]}>
             Актуальность проекта
           </h2>
-          <p className={styles["relevanceSection__highlight"]}>
+          <h3 className={styles["relevanceSection__subtitle"]}>
             Число домашних животных в России выросло на 12,1 млн, или на 23%, за
             последние три года*
-          </p>
+          </h3>
           <p className={styles["relevanceSection__text"]}>
             Все эти цифры говорят о том, что создание универсального приложения
             для любителей животных будет полезно как самим животным, нуждающимся

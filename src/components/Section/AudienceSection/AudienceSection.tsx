@@ -4,13 +4,15 @@ export default function AudienceSection() {
   return (
     <section className={styles["audienceSection"]} id="audience">
       <div className={styles["audienceSection__container"]}>
-        <h2 className={styles["audienceSection__title"]}>
-          Для кого наш проект
-        </h2>
-        <p className={styles["audienceSection__subtitle"]}>
-          Наша целевая аудитория довольна широка и включает всех, кто имеет
-          питомцев или взаимодействует с ними
-        </p>
+        <div className={styles["audienceSection__titleWrapper"]}>
+          <h2 className={styles["audienceSection__title"]}>
+            Для кого наш проект
+          </h2>
+          <h3 className={styles["audienceSection__subtitle"]}>
+            Наша целевая аудитория довольна широка и включает всех, кто имеет
+            питомцев или взаимодействует с ними
+          </h3>
+        </div>
 
         <div className={styles["audienceSection__groups"]}>
           <div className={styles["audienceSection__group"]}>

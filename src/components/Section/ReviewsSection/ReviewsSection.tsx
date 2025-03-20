@@ -4,10 +4,12 @@ export default function ReviewsSection() {
   return (
     <section className={styles["reviewsSection"]} id={"reviews"}>
       <div className={styles["reviewsSection__container"]}>
-        <h2 className={styles["reviewsSection__title"]}>Отзывы</h2>
-        <p className={styles["reviewsSection__subtitle"]}>
-          Что говорят пользователи о проекте ЗооКлик
-        </p>
+        <div className={styles["reviewsSection__titleWrapper"]}>
+          <h2 className={styles["reviewsSection__title"]}>Отзывы</h2>
+          <h3 className={styles["reviewsSection__subtitle"]}>
+            Что говорят пользователи о проекте ЗооКлик
+          </h3>
+        </div>
 
         <div className={styles["reviewsSection__cards"]}>
           <div className={styles["reviewsSection__card"]}>

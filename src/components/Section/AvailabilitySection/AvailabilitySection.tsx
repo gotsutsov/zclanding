@@ -4,10 +4,12 @@ export default function AvailabilitySection() {
   return (
     <section className={styles["availabilitySection"]}>
       <div className={styles["availabilitySection__container"]}>
-        <h2 className={styles["availabilitySection__title"]}>Наличие</h2>
-        <p className={styles["availabilitySection__subtitle"]}>
-          Приложение уже доступно на телефонах
-        </p>
+        <div className={styles["availabilitySection__titleWrapper"]}>
+          <h2 className={styles["availabilitySection__title"]}>Наличие</h2>
+          <p className={styles["availabilitySection__subtitle"]}>
+            Приложение уже доступно на телефонах
+          </p>
+        </div>
 
         <div className={styles["availabilitySection__content"]}>
           <div className={styles["availabilitySection__imageWrapper"]}>
@@ -40,7 +42,7 @@ export default function AvailabilitySection() {
                 <img src="images/icon16.svg" alt="" />
               </div>
               <p className={styles["availabilitySection__text"]}>
-                Добавление медиа (фото, видео) в профиль пользователя
+                Создание тематических объявлений
               </p>
             </li>
             <li className={styles["availabilitySection__item"]}>
@@ -48,8 +50,7 @@ export default function AvailabilitySection() {
                 <img src="images/icon17.svg" alt="" />
               </div>
               <p className={styles["availabilitySection__text"]}>
-                Создание тематических объявлений, включающих информацию о
-                животном, медиа материалы, геолокацию и прочую информацию
+                Добавление медиа (фото, видео) в профиль пользователя
               </p>
             </li>
             <li className={styles["availabilitySection__item"]}>
@@ -57,7 +58,7 @@ export default function AvailabilitySection() {
                 <img src="images/icon18.svg" alt="" />
               </div>
               <p className={styles["availabilitySection__text"]}>
-                Добавление/удаление объявлений в (из) избранное
+                Добавление/удаление объявлений из избранного
               </p>
             </li>
             <li className={styles["availabilitySection__item"]}>

@@ -1,25 +1,14 @@
+@use "/src/styles/mixins" as mixin;
+
 .missionSection {
   margin-bottom: 128px;
 
-  &__container {
-    max-width: 1280px;
-    margin: 0 auto;
-  }
-
   &__title {
-    font-size: 3.5rem;
-    color: #626262;
-    text-align: center;
-    margin-bottom: 1rem;
+    @include mixin.title-styles(center);
   }
 
   &__subtitle {
-    font-size: 4.8rem;
-    font-weight: 700;
-    line-height: 52px;
-    letter-spacing: -2px;
-    text-align: center;
-    margin-bottom: 7rem;
+    @include mixin.subtitle-styles(center);
   }
 
   &__cards {

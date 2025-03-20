@@ -1,9 +1,9 @@
+@use "/src/styles/mixins" as mixin;
+
 .productSection {
   margin-bottom: 128px;
 
   &__container {
-    max-width: 1280px;
-    margin: 0 auto;
     display: flex;
     gap: 30px;
   }
@@ -15,15 +15,11 @@
   }
 
   &__title {
-    font-size: 3.5rem;
-    font-weight: 700;
-    color: #626262;
-    margin-bottom: 1rem;
+    @include mixin.title-styles;
   }
 
   &__subtitle {
-    font-size: 4.8rem;
-    margin-bottom: 2rem;
+    @include mixin.subtitle-styles;
   }
 
   &__list {

@@ -4,12 +4,12 @@ export default function BenefitsSection() {
   return (
     <section className={styles["benefitsSection"]} id="benefits">
       <div className={styles["benefitsSection__container"]}>
-        <div className={styles["benefitsSection__header"]}>
+        <div className={styles["benefitsSection__titleWrapper"]}>
           <h2 className={styles["benefitsSection__title"]}>Преимущества</h2>
-          <p className={styles["benefitsSection__label"]}>
+          <h3 className={styles["benefitsSection__subtitle"]}>
             Уникальная функция приложения – возможность поиска пропавших
             животных
-          </p>
+          </h3>
         </div>
 
         <div className={styles["benefitsSection__tabs"]}>
