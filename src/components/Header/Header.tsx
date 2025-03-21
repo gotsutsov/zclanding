@@ -16,11 +16,6 @@ export default function Header() {
         {/* <ul className="mobile" id="mobilemenu"></ul> */}
         <ul className={styles["header__menu"]}>
           <li className={styles["header__menu-item"]}>
-            <a className={styles["header__menu-link"]} href="#">
-              Главная
-            </a>
-          </li>
-          <li className={styles["header__menu-item"]}>
             <a className={styles["header__menu-link"]} href="#product">
               Приложение
             </a>

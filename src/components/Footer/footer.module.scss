@@ -1,44 +1,105 @@
+@use "/src/styles/mixins" as mixin;
+
 .footer {
-  text-align: center;
-  outline: 2px dashed rgb(108, 65, 250);
-}
-.footer-content {
-  // margin-bottom: 20px;
-}
-.footer-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-.footer-description {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-.footer-app-links img {
-  height: 40px;
-}
-.footer-nav a {
-  display: block;
-  margin: 5px 0;
-  color: #006400;
-  text-decoration: none;
-}
-.footer-nav a:hover {
-  text-decoration: underline;
-  cursor: alias;
-}
-.footer-icone {
-  width: 50px;
-}
-.footer-bottom {
-  font-size: 14px;
-  margin-top: 20px;
-}
-.footer-contact span,
-.footer-company-info span {
-  display: block;
-  margin: 3px 0;
-}
-.footer-dog-image {
-  width: 400px;
+  background-color: #32333e;
+  color: white;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: 1.6rem 3.2rem;
+  }
+
+  &__logo-wrapper {
+    box-sizing: content-box;
+    align-self: center;
+    padding: 1.6rem 3.2rem;
+    width: 20rem;
+  }
+
+  &__title {
+    @include mixin.title-styles(center);
+    color: white;
+  }
+
+  &__description {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 1.6rem;
+  }
+
+  &__contact {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.6rem;
+  }
+
+  &__contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    border-radius: 16px;
+    background-color: #000000;
+    gap: 1rem;
+
+    & span {
+      font-size: 2.2rem;
+
+      & a {
+        color: white;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__contact-icon {
+    width: 4rem;
+  }
+
+  &__download {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  &__download-link {
+    &:hover {
+      opacity: 0.8;
+      cursor: alias;
+    }
+  }
+
+  &__download-image {
+    width: 17.5rem;
+  }
+
+  &__nav-link {
+    display: block;
+    font-size: 2.2rem;
+    color: #006400;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: alias;
+    }
+  }
+
+  &__bottom {
+    padding: 1.6rem 3.2rem;
+    background-color: #1f202a;
+  }
+
+  &__icon {
+    width: 50px;
+  }
+
+  &__legal {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.6rem;
+    gap: 1rem;
+  }
 }

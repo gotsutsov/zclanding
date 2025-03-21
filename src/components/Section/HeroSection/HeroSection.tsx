@@ -25,8 +25,8 @@ export default function HeroSection() {
         <div className={styles["hero__download"]}>
           <a
             className={styles["hero__download-link"]}
-            target="_blank"
             href="https://redirect.appmetrica.yandex.com/serve/965008352398629561"
+            target="_blank"
           >
             <img
               className={styles["hero__download-image"]}

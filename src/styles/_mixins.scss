@@ -1,7 +1,7 @@
 @mixin title-styles($text-align: left) {
   font-size: 3.6rem;
   font-weight: 700;
-  letter-spacing: -0.1rem;
+  letter-spacing: -0.2rem;
   color: #626262;
   text-align: $text-align;
   margin-bottom: 1rem;
@@ -10,7 +10,7 @@
 @mixin subtitle-styles($text-align: left) {
   font-size: 4.8rem;
   font-weight: 700;
-  letter-spacing: -0.1rem;
+  letter-spacing: -0.2rem;
   color: #392413;
   text-align: $text-align;
   margin-bottom: 4.2rem;

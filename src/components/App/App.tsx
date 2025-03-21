@@ -8,13 +8,13 @@ import BenefitsSection from "../Section/BenefitsSection";
 import AvailabilitySection from "../Section/AvailabilitySection";
 import ReviewsSection from "../Section/ReviewsSection";
 import Footer from "../Footer";
+import ScrollToTopButton from "../ScrollToTopButton";
 
 import "./app.scss";
 
 export default function App() {
   return (
     <>
-      {/* <img className="sticky-image" src="images/f1.svg" alt="Sticky Image" /> */}
       <Header />
       <main className="main">
         <HeroSection />
@@ -27,6 +27,7 @@ export default function App() {
         <ReviewsSection />
       </main>
       <Footer />
+      <ScrollToTopButton />
     </>
   );
 }

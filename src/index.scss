@@ -1,3 +1,5 @@
+@import "./styles/fonts";
+
 :root {
   /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
   /* line-height: 1.5; */
@@ -17,7 +19,8 @@
 }
 
 html {
-  font-family: "Inter", sans-serif;
+  font-family: "Mulish";
+  font-weight: 400;
   font-size: clamp(7px, 1vw, 10px);
   height: 100%;
   scroll-behavior: smooth;
@@ -103,9 +106,9 @@ button:focus-visible {
     font-size: 7px;
   } */
 
-  body {
+  /* body {
     padding: 0 30px;
-  }
+  } */
 
   body {
     /* padding: 0 clamp(20px, 4vw, 30px); */
@@ -117,7 +120,7 @@ button:focus-visible {
 } */
 
 @media (max-width: 575.98px) {
-  body {
+  /* body {
     padding: 0 20px;
-  }
+  } */
 }

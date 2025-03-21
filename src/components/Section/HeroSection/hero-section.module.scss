@@ -1,3 +1,5 @@
+@use "/src/styles/mixins" as mixin;
+
 .hero {
   // max-width: 1280px;
   // height: 735px;
@@ -9,9 +11,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 3rem;
   color: #fff;
-  margin-bottom: 96px;
+  margin-bottom: 6.4rem;
 
   &__container {
     display: flex;
@@ -26,16 +28,13 @@
   }
 
   &__slogan {
-    font-weight: 700;
-    font-size: 3.75rem;
-    letter-spacing: -1px;
-    // word-spacing: 2px;
+    @include mixin.title-styles;
+    color: white;
   }
 
   &__title {
-    font-size: 5rem;
-    line-height: 46px;
-    letter-spacing: -0.1rem;
+    @include mixin.subtitle-styles;
+    color: white;
   }
 
   &__logo {
@@ -64,7 +63,6 @@
   }
 
   &__download-image {
-    width: 174px;
-    // height: 80px;
+    width: 17.5rem;
   }
 }
