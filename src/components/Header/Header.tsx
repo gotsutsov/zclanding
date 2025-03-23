@@ -31,17 +31,29 @@ export default function Header() {
           }
         >
           <li className={styles["header__menu-item"]}>
-            <a className={styles["header__menu-link"]} href="#product">
+            <a
+              className={styles["header__menu-link"]}
+              href="#product"
+              onClick={toggleMenu}
+            >
               Приложение
             </a>
           </li>
           <li className={styles["header__menu-item"]}>
-            <a className={styles["header__menu-link"]} href="#mission">
+            <a
+              className={styles["header__menu-link"]}
+              href="#mission"
+              onClick={toggleMenu}
+            >
               О проекте
             </a>
           </li>
           <li className={styles["header__menu-item"]}>
-            <a className={styles["header__menu-link"]} href="#relevance">
+            <a
+              className={styles["header__menu-link"]}
+              href="#relevance"
+              onClick={toggleMenu}
+            >
               Актуальность
             </a>
           </li>

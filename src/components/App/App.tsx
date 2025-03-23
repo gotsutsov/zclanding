@@ -1,4 +1,5 @@
 import Header from "../Header";
+import Main from "../Main";
 import HeroSection from "../Section/HeroSection";
 import ProductSection from "../Section/ProductSection";
 import MissionSection from "../Section/MissionSection";
@@ -10,13 +11,11 @@ import ReviewsSection from "../Section/ReviewsSection";
 import Footer from "../Footer";
 import ScrollToTopButton from "../ScrollToTopButton";
 
-import "./app.scss";
-
 export default function App() {
   return (
     <>
       <Header />
-      <main className="main">
+      <Main>
         <HeroSection />
         <ProductSection />
         <MissionSection />
@@ -25,7 +24,7 @@ export default function App() {
         <BenefitsSection />
         <AvailabilitySection />
         <ReviewsSection />
-      </main>
+      </Main>
       <Footer />
       <ScrollToTopButton />
     </>
