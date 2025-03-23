@@ -21,7 +21,7 @@ export default function HeroSection() {
           /> */}
         </div>
 
-        <p className={styles["hero__download-label"]}>Скачать приложение</p>
+        <p className={styles["hero__download-label"]}>Скачать приложение:</p>
         <div className={styles["hero__download"]}>
           <a
             className={styles["hero__download-link"]}

@@ -5,9 +5,9 @@ export default function AvailabilitySection() {
     <section className={styles["availabilitySection"]} id={"availability"}>
       <div className={styles["availabilitySection__container"]}>
         <div className={styles["availabilitySection__titleWrapper"]}>
-          <h2 className={styles["availabilitySection__title"]}>Наличие</h2>
+          <h2 className={styles["availabilitySection__title"]}>Уже здесь</h2>
           <p className={styles["availabilitySection__subtitle"]}>
-            Приложение уже доступно на телефонах
+            Приложение доступно на смартфонах
           </p>
         </div>
 

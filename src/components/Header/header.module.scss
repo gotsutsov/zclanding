@@ -10,40 +10,35 @@
   &__nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
-  &__logo {
+  &__logo-wrapper {
     width: 20rem;
+  }
+
+  &__burger {
+    display: none;
+    background: none;
+    border: none;
+    width: 5rem;
+    cursor: pointer;
   }
 
   &__menu {
     display: flex;
-    align-items: center;
-    gap: 1rem;
+    gap: 2rem;
   }
 
   &__menu-item {
     display: flex;
-
-    &:last-child .header__menu-link {
-      color: #fff;
-      background-color: #007bff;
-      border-radius: 0;
-      transition: background-color 0.3s ease;
-
-      &:hover {
-        background-color: #0056b3;
-        transform: scale(1.1);
-      }
-    }
   }
 
   &__menu-link {
-    color: #392413;
     white-space: nowrap;
     font-size: 1.6rem;
     font-weight: 700;
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
 
     &:hover {
       background-color: #8bc53f;
@@ -51,4 +46,45 @@
       color: white;
     }
   }
+
+  @media (max-width: 1399.98px) {
+    &__menu {
+      gap: 1rem;
+    }
+  }
+
+  @media (max-width: 1199.98px) {
+    &__menu {
+      gap: 0;
+    }
+
+    &__menu-link {
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    &__menu {
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      width: 100%;
+      background: orange;
+      transform: translateX(-100%);
+      transition: 0.3s;
+
+      &--open {
+        transform: translateX(0);
+      }
+    }
+
+    &__burger {
+      display: flex;
+    }
+  }
+
+  // @media (max-width: 767.98px) {
+
+  // }
 }

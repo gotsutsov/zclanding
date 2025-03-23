@@ -27,7 +27,7 @@ export default function ScrollToTopButton() {
       onClick={scrollToTop}
       aria-label="Наверх"
     >
-      ↑
+      <img src="images/scroll-to-top-button.svg" alt="ScrollButton" />
     </button>
   );
 }

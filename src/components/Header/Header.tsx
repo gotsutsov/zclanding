@@ -1,20 +1,35 @@
+import { useState } from "react";
 import styles from "./header.module.scss";
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <header className={styles["header"]}>
-      {/* <div className="burger">☰</div> */}
       <nav className={styles["header__nav"]}>
-        <img
-          className={styles["header__logo"]}
-          src="images/logo.svg"
-          alt="logo"
-        />
-        {/* <a className="mobilenav" href="javascript:void(0)">
-          <img src="./images/menu.svg" alt="" onClick={() => {}} />
-        </a> */}
-        {/* <ul className="mobile" id="mobilemenu"></ul> */}
-        <ul className={styles["header__menu"]}>
+        <div className={styles["header__logo-wrapper"]}>
+          <img
+            className={styles["header__logo"]}
+            src="images/logo.svg"
+            alt="logo"
+          />
+        </div>
+
+        <button className={styles["header__burger"]} onClick={toggleMenu}>
+          <img src="images/burger.svg" alt="burger menu" />
+        </button>
+
+        <ul
+          className={
+            isOpen
+              ? `${styles["header__menu"]} ${styles["header__menu--open"]}`
+              : styles["header__menu"]
+          }
+        >
           <li className={styles["header__menu-item"]}>
             <a className={styles["header__menu-link"]} href="#product">
               Приложение
