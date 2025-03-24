@@ -2,6 +2,7 @@ import { useState } from "react";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import MenuIcon from "@mui/icons-material/Menu";
 
 import styles from "./burger-menu.module.scss";
 
@@ -26,11 +27,7 @@ export default function BurgerMenu() {
         aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
       >
-        <img
-          className={styles["burgerMenu__icon"]}
-          src="images/burger.svg"
-          alt="burger menu"
-        />
+        <MenuIcon />
       </Button>
       <Menu
         id="basic-menu"
