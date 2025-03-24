@@ -44,4 +44,26 @@
     font-size: 1.6rem;
     line-height: 2.4rem;
   }
+
+  @media (max-width: 1199.98px) {
+    &__cards {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    &__cards {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    &__title {
+      @include mixin.title-styles(start);
+    }
+
+    &__subtitle {
+      @include mixin.subtitle-styles(start);
+    }
+  }
 }

@@ -1,13 +1,8 @@
-import { useState } from "react";
+import BurgerMenu from "../BurgerMenu";
+
 import styles from "./header.module.scss";
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
     <header className={styles["header"]}>
       <nav className={styles["header__nav"]}>
@@ -19,41 +14,21 @@ export default function Header() {
           />
         </div>
 
-        <button className={styles["header__burger"]} onClick={toggleMenu}>
-          <img src="images/burger.svg" alt="burger menu" />
-        </button>
+        <BurgerMenu />
 
-        <ul
-          className={
-            isOpen
-              ? `${styles["header__menu"]} ${styles["header__menu--open"]}`
-              : styles["header__menu"]
-          }
-        >
+        <ul className={styles["header__menu"]}>
           <li className={styles["header__menu-item"]}>
-            <a
-              className={styles["header__menu-link"]}
-              href="#product"
-              onClick={toggleMenu}
-            >
+            <a className={styles["header__menu-link"]} href="#product">
               Приложение
             </a>
           </li>
           <li className={styles["header__menu-item"]}>
-            <a
-              className={styles["header__menu-link"]}
-              href="#mission"
-              onClick={toggleMenu}
-            >
+            <a className={styles["header__menu-link"]} href="#mission">
               О проекте
             </a>
           </li>
           <li className={styles["header__menu-item"]}>
-            <a
-              className={styles["header__menu-link"]}
-              href="#relevance"
-              onClick={toggleMenu}
-            >
+            <a className={styles["header__menu-link"]} href="#relevance">
               Актуальность
             </a>
           </li>
@@ -87,17 +62,17 @@ export default function Header() {
         {/* <ul className="social">
           <li>
             <a href="#">
-              <img src="./images/fb.svg" alt="" />
+              <img src="images/fb.svg" alt="fb" />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="./images/ig.svg" alt="" />
+              <img src="images/ig.svg" alt="ig" />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="./images/tw.svg" alt="" />
+              <img src="images/tw.svg" alt="tw" />
             </a>
           </li>
         </ul> */}

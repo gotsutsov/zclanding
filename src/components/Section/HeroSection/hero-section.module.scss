@@ -1,9 +1,6 @@
 @use "/src/styles/mixins" as mixin;
 
 .hero {
-  // max-width: 1280px;
-  // height: 735px;
-  // margin: 0 auto;
   background-image: url("/images/back-hero.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -15,26 +12,40 @@
   color: #fff;
   margin-bottom: 6.4rem;
 
+  @media (max-width: 991.98px) {
+    background-position: -12rem;
+  }
+
+  @media (max-width: 767.98px) {
+    background-position: -18rem;
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
     margin-left: auto;
   }
 
-  &__text {
-    display: flex;
-    align-items: center;
-    margin-bottom: 80px;
+  &__title-wrapper {
+    margin-bottom: 6rem;
   }
 
   &__slogan {
     @include mixin.title-styles;
     color: white;
+
+    @media (max-width: 991.98px) {
+      text-align: end;
+    }
   }
 
   &__title {
     @include mixin.subtitle-styles;
     color: white;
+
+    @media (max-width: 991.98px) {
+      text-align: end;
+    }
   }
 
   &__logo {
@@ -54,8 +65,6 @@
   }
 
   &__download-link {
-    // height: 50px;
-
     &:hover {
       opacity: 0.8;
       cursor: alias;
@@ -63,6 +72,6 @@
   }
 
   &__download-image {
-    width: 22.5rem;
+    width: 24rem;
   }
 }

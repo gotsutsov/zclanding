@@ -9,7 +9,6 @@ export default function Footer() {
             <img
               className={styles["footer__logo"]}
               src="images/logo-footer.svg"
-              loading="lazy"
               alt="logo-footer"
             />
           </div>

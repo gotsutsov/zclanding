@@ -47,16 +47,9 @@
     font-weight: 700;
   }
 
-  &__image {
-    flex-shrink: 1;
+  &__image-wrapper {
     align-self: center;
-    width: clamp(200px, 50vw, 568px);
-    height: auto;
-  }
-
-  @media (max-width: 1399.98px) {
-    /* стили для экранов меньше 1400px */
-    // Устройства X-Large (большие настольные компьютеры, менее 1400 пикселей)
+    width: 48rem;
   }
 
   @media (max-width: 1199.98px) {
@@ -65,14 +58,10 @@
     }
   }
 
-  @media (max-width: 991.98px) {
-    /* стили для экранов меньше 992px */
-    // Устройства Medium (планшеты, менее 992 пикселей)
-  }
-
   @media (max-width: 767.98px) {
-    /* стили для экранов меньше 768px */
-    // Устройства Small (телефоны с горизонтальной ориентацией, менее 768 пикселей)
+    &__list {
+      grid-template-columns: 1fr;
+    }
   }
 
   @media (max-width: 575.98px) {

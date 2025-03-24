@@ -78,8 +78,12 @@ export default function ProductSection() {
           </ul>
         </div>
 
-        <div className={styles["productSection__image"]}>
-          <img src="images/ip13.png" alt="Приложение ЗооКлик" />
+        <div className={styles["productSection__image-wrapper"]}>
+          <img
+            className={styles["productSection__image"]}
+            src="images/ip13.png"
+            alt="Приложение ЗооКлик"
+          />
         </div>
       </div>
     </section>

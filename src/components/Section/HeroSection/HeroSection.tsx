@@ -4,7 +4,7 @@ export default function HeroSection() {
   return (
     <section className={styles["hero"]}>
       <div className={styles["hero__container"]}>
-        <div className={styles["hero__text"]}>
+        <div className={styles["hero__title-wrapper"]}>
           <div>
             <p className={styles["hero__slogan"]}>Делать добро - просто!</p>
             <h1 className={styles["hero__title"]}>
