@@ -19,15 +19,28 @@ export default function BurgerMenu() {
   };
 
   return (
-    <div className={styles["burgerMenu"]}>
+    <div className={styles["burger"]}>
       <Button
+        sx={{
+          backgroundColor: "#8BC43A",
+          color: "#fff",
+          // padding: "2rem 3rem",
+
+          "&:hover": {
+            backgroundColor: "#e64a19",
+          },
+        }}
         id="basic-button"
         aria-controls={open ? "basic-menu" : undefined}
         aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
       >
-        <MenuIcon />
+        <MenuIcon
+          sx={{
+            fontSize: "3rem",
+          }}
+        />
       </Button>
       <Menu
         id="basic-menu"
