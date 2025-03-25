@@ -60,8 +60,7 @@ export default function RelevanceSection() {
             </div>
             <h3 className={styles["relevanceSection__statValue"]}>650 тысяч</h3>
             <p className={styles["relevanceSection__statLabel"]}>
-              Бездомных животных находятся в приютах
-              <br /> России
+              Бездомных животных находятся в приютах России
             </p>
           </div>
         </div>

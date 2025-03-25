@@ -6,17 +6,40 @@
   box-shadow: 0px 4px 14px 0px #0000001a;
   margin-bottom: 6.4rem;
 
+  @media (max-width: 575.98px) {
+    border-radius: 0;
+  }
+
   &__title {
     @include mixin.title-styles(center);
+
+    @media (max-width: 575.98px) {
+      text-align: left;
+    }
   }
 
   &__subtitle {
     @include mixin.subtitle-styles(center);
+
+    @media (max-width: 575.98px) {
+      text-align: left;
+    }
   }
 
   &__cards {
     display: flex;
-    gap: 20px;
+    gap: 2rem;
+
+    @media (max-width: 1199.98px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    @media (max-width: 767.98px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__card {
@@ -31,8 +54,12 @@
   }
 
   &__icon {
-    width: 110px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+
+    & img {
+      width: 11rem;
+      height: 11rem;
+    }
   }
 
   &__cardTitle {
@@ -43,27 +70,5 @@
   &__cardText {
     font-size: 1.6rem;
     line-height: 2.4rem;
-  }
-
-  @media (max-width: 1199.98px) {
-    &__cards {
-      flex-wrap: wrap;
-    }
-  }
-
-  @media (max-width: 767.98px) {
-    &__cards {
-      flex-direction: column;
-    }
-  }
-
-  @media (max-width: 575.98px) {
-    &__title {
-      @include mixin.title-styles(start);
-    }
-
-    &__subtitle {
-      @include mixin.subtitle-styles(start);
-    }
   }
 }

@@ -6,55 +6,78 @@
   box-shadow: 0px 4px 14px 0px #0000001a;
   margin-bottom: 6.4rem;
 
+  @media (max-width: 575.98px) {
+    border-radius: 0;
+  }
+
   &__title {
     @include mixin.title-styles(center);
+
+    @media (max-width: 575.98px) {
+      text-align: left;
+    }
   }
 
   &__subtitle {
     @include mixin.subtitle-styles(center);
+
+    @media (max-width: 575.98px) {
+      text-align: left;
+    }
   }
 
   &__cards {
     display: flex;
     justify-content: space-evenly;
-    gap: 20px;
+    gap: 2rem;
+
+    @media (max-width: 767.98px) {
+      flex-direction: column;
+    }
   }
 
   &__card {
-    max-width: 400px;
-    min-height: 400px;
     display: flex;
+    flex: 1;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 6rem 3rem;
+    padding: 4rem 2rem;
     border: 1px solid #d1d1d1;
     border-radius: 2rem;
-    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
   }
 
   &__author {
     font-size: 2.3rem;
     font-weight: 700;
-    color: #392413;
     margin-bottom: 1rem;
   }
 
   &__stars {
     display: flex;
-    gap: 4px;
+    gap: 0.4rem;
     margin-bottom: 1rem;
 
-    img {
-      width: 24px;
-      height: 24px;
+    & img {
+      width: 2.4rem;
+      height: 2.4rem;
     }
   }
 
   &__text {
     font-size: 1.6rem;
     line-height: 2.4rem;
-    color: #392413;
+
+    margin-bottom: auto;
+  }
+
+  &__avatar {
+    margin-top: 2rem;
+
+    & img {
+      width: 17rem;
+      height: 17rem;
+    }
   }
 }
