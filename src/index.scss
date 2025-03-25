@@ -10,14 +10,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  // outline: 1px solid red;
 }
 
 :root {
   font-family: "Mulish";
   font-weight: 400;
   font-size: 10px;
-  height: 100%;
-  overflow-x: hidden;
   scroll-behavior: smooth;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -45,18 +44,31 @@
   }
 }
 
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  min-height: 100vh;
+  background-color: #fff;
+  font-size: 1.6rem;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+}
+
 a {
   text-decoration: none;
   color: black;
 }
 
-ul {
+ul,
+ol {
   list-style: none;
 }
 
-img {
+img,
+video,
+svg {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
