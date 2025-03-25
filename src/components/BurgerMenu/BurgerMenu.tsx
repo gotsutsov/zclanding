@@ -18,61 +18,83 @@ export default function BurgerMenu() {
     setAnchorEl(null);
   };
 
+  const menuItems = [
+    { label: "Приложение", href: "#product" },
+    { label: "О проекте", href: "#mission" },
+    { label: "Актуальность", href: "#relevance" },
+    { label: "Аудитория", href: "#audience" },
+    { label: "Преимущества", href: "#benefits" },
+    { label: "Наличие", href: "#availability" },
+    { label: "Отзывы", href: "#reviews" },
+    { label: "Контакты", href: "#contact" },
+  ];
+
   return (
     <div className={styles["burger"]}>
       <Button
-        sx={{
-          backgroundColor: "#8BC43A",
-          color: "#fff",
-          // padding: "2rem 3rem",
-
-          "&:hover": {
-            backgroundColor: "#e64a19",
-          },
-        }}
+        sx={buttonStyles}
         id="basic-button"
         aria-controls={open ? "basic-menu" : undefined}
         aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
       >
-        <MenuIcon
-          sx={{
-            fontSize: "3rem",
-          }}
-        />
+        <MenuIcon sx={menuIconStyles} />
       </Button>
       <Menu
+        slotProps={menuPaperProps}
         id="basic-menu"
         anchorEl={anchorEl}
         open={open}
         onClose={handleClose}
+        disableScrollLock
       >
-        <MenuItem onClick={handleClose} component="a" href="#product">
-          Приложение
-        </MenuItem>
-        <MenuItem onClick={handleClose} component="a" href="#mission">
-          О проекте
-        </MenuItem>
-        <MenuItem onClick={handleClose} component="a" href="#relevance">
-          Актуальность
-        </MenuItem>
-        <MenuItem onClick={handleClose} component="a" href="#audience">
-          Аудитория
-        </MenuItem>
-        <MenuItem onClick={handleClose} component="a" href="#benefits">
-          Преимущества
-        </MenuItem>
-        <MenuItem onClick={handleClose} component="a" href="#availability">
-          Наличие
-        </MenuItem>
-        <MenuItem onClick={handleClose} component="a" href="#reviews">
-          Отзывы
-        </MenuItem>
-        <MenuItem onClick={handleClose} component="a" href="#contact">
-          Контакты
-        </MenuItem>
+        {menuItems.map((item) => (
+          <MenuItem
+            key={item.href}
+            sx={menuItemStyles}
+            onClick={handleClose}
+            component="a"
+            href={item.href}
+          >
+            {item.label}
+          </MenuItem>
+        ))}
       </Menu>
     </div>
   );
 }
+
+const buttonStyles = {
+  backgroundColor: "#8BC43A",
+  color: "#fff",
+  "&:hover": {
+    backgroundColor: "#e64a19",
+  },
+  "&:focus": {
+    backgroundColor: "#8BC43A",
+  },
+};
+
+const menuIconStyles = {
+  fontSize: "3rem",
+};
+
+const menuPaperProps = {
+  paper: {
+    sx: {
+      width: "50vw",
+      boxShadow: 3,
+    },
+  },
+};
+
+const menuItemStyles = {
+  fontFamily: "inherit",
+  fontSize: "1.6rem",
+  minHeight: "auto",
+  "&:hover": {
+    backgroundColor: "#8BC43A",
+    color: "white",
+  },
+};
