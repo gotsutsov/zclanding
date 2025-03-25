@@ -4,7 +4,7 @@ export default function RelevanceSection() {
   return (
     <section className={styles["relevanceSection"]} id={"relevance"}>
       <div className={styles["relevanceSection__container"]}>
-        <div className={styles["relevanceSection__titleWrapper"]}>
+        <div className={styles["relevanceSection__title-wrapper"]}>
           <h2 className={styles["relevanceSection__title"]}>
             Актуальность проекта
           </h2>

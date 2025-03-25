@@ -5,6 +5,10 @@
   color: #626262;
   text-align: $text-align;
   margin-bottom: 1rem;
+
+  @media (max-width: 575.98px) {
+    text-align: left;
+  }
 }
 
 @mixin subtitle-styles($text-align: left) {
@@ -13,4 +17,8 @@
   letter-spacing: -0.2rem;
   text-align: $text-align;
   margin-bottom: 4.2rem;
+
+  @media (max-width: 575.98px) {
+    text-align: left;
+  }
 }

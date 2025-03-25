@@ -12,18 +12,10 @@
 
   &__title {
     @include mixin.title-styles(center);
-
-    @media (max-width: 575.98px) {
-      text-align: left;
-    }
   }
 
   &__subtitle {
     @include mixin.subtitle-styles(center);
-
-    @media (max-width: 575.98px) {
-      text-align: left;
-    }
   }
 
   &__cards {

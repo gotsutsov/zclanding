@@ -22,6 +22,26 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1399.98px) {
+    font-size: 9px;
+  }
+
+  @media (max-width: 1199.98px) {
+    font-size: 8.5px;
+  }
+
+  @media (max-width: 991.98px) {
+    font-size: 8px;
+  }
+
+  @media (max-width: 767.98px) {
+    font-size: 7px;
+  }
+
+  @media (max-width: 575.98px) {
+    font-size: 6.8px;
+  }
 }
 
 a {
@@ -74,33 +94,3 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
-
-@media (max-width: 1399.98px) {
-  :root {
-    font-size: 9px;
-  }
-}
-
-@media (max-width: 1199.98px) {
-  :root {
-    font-size: 8.5px;
-  }
-}
-
-@media (max-width: 991.98px) {
-  :root {
-    font-size: 8px;
-  }
-}
-
-@media (max-width: 767.98px) {
-  :root {
-    font-size: 7px;
-  }
-}
-
-@media (max-width: 575.98px) {
-  :root {
-    font-size: 6.8px;
-  }
-}

@@ -4,7 +4,7 @@ export default function BenefitsSection() {
   return (
     <section className={styles["benefitsSection"]} id="benefits">
       <div className={styles["benefitsSection__container"]}>
-        <div className={styles["benefitsSection__titleWrapper"]}>
+        <div className={styles["benefitsSection__title-wrapper"]}>
           <h2 className={styles["benefitsSection__title"]}>Преимущества</h2>
           <h3 className={styles["benefitsSection__subtitle"]}>
             Уникальная функция приложения – возможность поиска пропавших
@@ -12,7 +12,7 @@ export default function BenefitsSection() {
           </h3>
         </div>
 
-        <div className={styles["benefitsSection__tabs"]}>
+        {/* <div className={styles["benefitsSection__tabs"]}>
           <button
             className={`${styles["benefitsSection__tab"]} ${styles["benefitsSection__tab--active"]}`}
           >
@@ -23,7 +23,7 @@ export default function BenefitsSection() {
             <img src="images/buttonicon2.svg" alt="Иконка для бизнеса" />
             Для бизнеса
           </button>
-        </div>
+        </div> */}
 
         <div className={styles["benefitsSection__content"]}>
           <ul className={styles["benefitsSection__list"]}>
@@ -70,7 +70,7 @@ export default function BenefitsSection() {
             </li>
           </ul>
 
-          <div className={styles["benefitsSection__imageWrapper"]}>
+          <div className={styles["benefitsSection__image-wrapper"]}>
             <img
               className={styles["benefitsSection__image"]}
               src="images/chunya.avif"

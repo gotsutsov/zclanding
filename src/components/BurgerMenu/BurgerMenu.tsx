@@ -91,7 +91,8 @@ const menuPaperProps = {
 
 const menuItemStyles = {
   fontFamily: "inherit",
-  fontSize: "1.6rem",
+  fontSize: "1.8rem",
+  fontWeight: 700,
   minHeight: "auto",
   "&:hover": {
     backgroundColor: "#8BC43A",

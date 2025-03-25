@@ -5,7 +5,7 @@ export default function ProductSection() {
     <section className={styles["productSection"]} id="product">
       <div className={styles["productSection__container"]}>
         <div className={styles["productSection__content"]}>
-          <div className={styles["productSection__titleWrapper"]}>
+          <div className={styles["productSection__title-wrapper"]}>
             <h2 className={styles["productSection__title"]}>Наш продукт</h2>
             <h3 className={styles["productSection__subtitle"]}>
               Наше приложение — удобный сервис для общения и помощи животным

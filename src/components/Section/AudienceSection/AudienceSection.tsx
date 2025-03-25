@@ -4,7 +4,7 @@ export default function AudienceSection() {
   return (
     <section className={styles["audienceSection"]} id="audience">
       <div className={styles["audienceSection__container"]}>
-        <div className={styles["audienceSection__titleWrapper"]}>
+        <div className={styles["audienceSection__title-wrapper"]}>
           <h2 className={styles["audienceSection__title"]}>
             Для кого наш проект
           </h2>
@@ -44,7 +44,7 @@ export default function AudienceSection() {
         </div>
 
         <div className={styles["audienceSection__bottom"]}>
-          <div className={styles["audienceSection__imageWrapper"]}>
+          <div className={styles["audienceSection__image-wrapper"]}>
             <img
               className={styles["audienceSection__image"]}
               src="images/buba.avif"
