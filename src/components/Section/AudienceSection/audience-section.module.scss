@@ -1,15 +1,7 @@
 @use "/src/styles/mixins" as mixin;
 
 .audienceSection {
-  padding: 4rem 4rem;
-  border-radius: 10px;
-  box-shadow: 0px 4px 14px 0px #0000001a;
-  margin-bottom: 6.4rem;
-
-  @media (max-width: 575.98px) {
-    padding: 16px 16px;
-    border-radius: 0;
-  }
+  @include mixin.section-styles;
 
   &__title {
     @include mixin.title-styles(center);
@@ -20,10 +12,10 @@
   }
 
   &__groups {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 2rem;
-    margin-bottom: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 4rem;
 
     @media (max-width: 767.98px) {
       flex-wrap: wrap;
@@ -31,7 +23,6 @@
   }
 
   &__group {
-    width: 24rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,15 +39,15 @@
   }
 
   &__groupText {
-    font-size: 2.4rem;
-    line-height: 2.9rem;
-    letter-spacing: -0.1rem;
+    @include mixin.text-styles(center);
   }
 
   &__bottom {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
     align-items: center;
-    gap: 6rem;
+    gap: 4rem;
 
     @media (max-width: 991.98px) {
       flex-direction: column;
@@ -64,32 +55,37 @@
   }
 
   &__image-wrapper {
-    flex: 1;
+    // width: 300px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__image {
-    border-radius: 16px;
   }
 
   &__goals {
-    flex: 1;
   }
 
   &__goal,
   &__implementation {
-    margin-bottom: 3.8rem;
+    margin-bottom: 3.6rem;
   }
 
   &__goalTitle,
   &__implementationTitle {
-    margin-bottom: 1.6rem;
     @include mixin.subtitle-styles;
+
+    & {
+      margin-bottom: 1rem;
+    }
   }
 
   &__goalText,
   &__implementationText {
-    font-size: 2.4rem;
-    line-height: 2.9rem;
-    letter-spacing: -0.1rem;
+    @include mixin.text-styles;
   }
 }

@@ -22,6 +22,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
 
   @media (max-width: 1399.98px) {
     font-size: 9px;
@@ -36,11 +38,11 @@
   }
 
   @media (max-width: 767.98px) {
-    font-size: 7px;
+    font-size: 7.5px;
   }
 
   @media (max-width: 575.98px) {
-    font-size: 6.8px;
+    font-size: 7px;
   }
 }
 
@@ -49,9 +51,6 @@ body {
   max-width: 100vw;
   min-height: 100vh;
   background-color: #fff;
-  font-size: 1.6rem;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-text-size-adjust: 100%;
 }
 
 a {

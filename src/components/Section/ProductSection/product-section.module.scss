@@ -1,19 +1,15 @@
 @use "/src/styles/mixins" as mixin;
 
 .productSection {
-  padding: 3.2rem 3.2rem;
-  border-radius: 10px;
-  box-shadow: 0px 4px 14px 0px #0000001a;
-  margin-bottom: 6.4rem;
-
-  @media (max-width: 575.98px) {
-    padding: 16px 16px;
-    border-radius: 0;
-  }
+  @include mixin.section-styles;
 
   &__container {
     display: flex;
-    gap: 30px;
+    gap: 2.4rem;
+
+    @media (max-width: 1199.98px) {
+      flex-direction: column;
+    }
   }
 
   &__content {
@@ -34,13 +30,21 @@
   &__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 2.4rem;
+
+    @media (max-width: 767.98px) {
+      grid-template-columns: 1fr;
+    }
+
+    @media (max-width: 575.98px) {
+      gap: 12px;
+    }
   }
 
   &__item {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 2.4rem;
   }
 
   &__icon {
@@ -54,24 +58,5 @@
   &__image-wrapper {
     align-self: center;
     width: 48rem;
-  }
-
-  @media (max-width: 1199.98px) {
-    &__container {
-      flex-direction: column;
-    }
-  }
-
-  @media (max-width: 767.98px) {
-    &__list {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  @media (max-width: 575.98px) {
-    &__list {
-      grid-template-columns: 1fr;
-      gap: 10px;
-    }
   }
 }

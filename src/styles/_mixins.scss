@@ -1,5 +1,5 @@
 @mixin title-styles($text-align: left, $color: #85879a) {
-  font-size: 3.3rem;
+  font-size: 2.8rem;
   font-weight: 700;
   letter-spacing: -0.1rem;
   color: $color;
@@ -12,7 +12,7 @@
 }
 
 @mixin subtitle-styles($text-align: left, $color: #32333e) {
-  font-size: 4.2rem;
+  font-size: 4rem;
   font-weight: 700;
   color: $color;
   letter-spacing: -0.2rem;
@@ -25,8 +25,24 @@
 }
 
 @mixin text-styles($text-align: left, $font-weight: 400, $color: #32333e) {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: $font-weight;
   color: $color;
   text-align: $text-align;
+
+  @media (max-width: 1199.98px) {
+    font-size: 16px;
+  }
+}
+
+@mixin section-styles {
+  padding: 3.2rem 3.2rem;
+  border-radius: 32px;
+  box-shadow: 0px 4px 14px 0px #0000001a;
+  margin-bottom: 6.4rem;
+
+  @media (max-width: 575.98px) {
+    padding: 16px;
+    border-radius: 0;
+  }
 }
