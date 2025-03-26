@@ -19,8 +19,8 @@
   }
 
   &__title {
-    @include mixin.title-styles(center);
     color: white;
+    @include mixin.title-styles(center);
   }
 
   &__description {

@@ -8,7 +8,7 @@ import AudienceSection from "../Section/AudienceSection";
 import BenefitsSection from "../Section/BenefitsSection";
 import AvailabilitySection from "../Section/AvailabilitySection";
 import ReviewsSection from "../Section/ReviewsSection";
-// import Footer from "../Footer";
+import Footer from "../Footer";
 // import ScrollToTopButton from "../ScrollToTopButton";
 
 export default function App() {
@@ -25,7 +25,7 @@ export default function App() {
         <AvailabilitySection />
         <ReviewsSection />
       </Main>
-      {/* <Footer /> */}
+      <Footer />
       {/* <ScrollToTopButton /> */}
     </>
   );

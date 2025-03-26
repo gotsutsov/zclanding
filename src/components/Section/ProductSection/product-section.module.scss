@@ -1,12 +1,13 @@
 @use "/src/styles/mixins" as mixin;
 
 .productSection {
-  padding: 4rem 4rem;
+  padding: 3.2rem 3.2rem;
   border-radius: 10px;
   box-shadow: 0px 4px 14px 0px #0000001a;
   margin-bottom: 6.4rem;
 
   @media (max-width: 575.98px) {
+    padding: 12px 12px;
     border-radius: 0;
   }
 

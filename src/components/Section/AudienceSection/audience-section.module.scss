@@ -81,8 +81,8 @@
 
   &__goalTitle,
   &__implementationTitle {
-    @include mixin.subtitle-styles;
     margin-bottom: 1.6rem;
+    @include mixin.subtitle-styles;
   }
 
   &__goalText,
