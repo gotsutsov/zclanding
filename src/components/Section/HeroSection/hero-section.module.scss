@@ -21,7 +21,7 @@
   }
 
   @media (max-width: 575.98px) {
-    padding: 12px 12px;
+    padding: 16px 16px;
   }
 
   &__container {
@@ -35,8 +35,7 @@
   }
 
   &__slogan {
-    color: white;
-    @include mixin.title-styles;
+    @include mixin.title-styles(_, white);
 
     @media (max-width: 991.98px) {
       text-align: end;
@@ -44,8 +43,7 @@
   }
 
   &__title {
-    color: white;
-    @include mixin.subtitle-styles;
+    @include mixin.subtitle-styles(_, white);
 
     @media (max-width: 991.98px) {
       text-align: end;
@@ -58,8 +56,7 @@
   // }
 
   &__download-label {
-    font-size: 2.4rem;
-    font-weight: 700;
+    @include mixin.text-styles(_, 700, white);
     margin-bottom: 1rem;
   }
 

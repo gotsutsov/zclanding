@@ -7,7 +7,7 @@
   margin-bottom: 6.4rem;
 
   @media (max-width: 575.98px) {
-    padding: 12px 12px;
+    padding: 16px 16px;
     border-radius: 0;
   }
 
@@ -48,8 +48,7 @@
   }
 
   &__text {
-    font-size: 2rem;
-    font-weight: 700;
+    @include mixin.text-styles(left, 700);
   }
 
   &__image-wrapper {

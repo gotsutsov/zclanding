@@ -20,14 +20,10 @@
   }
 
   &__cards {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 2rem;
-
-    @media (max-width: 1199.98px) {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-    }
 
     @media (max-width: 767.98px) {
       display: flex;
@@ -39,14 +35,14 @@
     flex: 1;
     background-color: rgb(247, 247, 247);
     border-radius: 0px 37px;
-    padding: 3.5rem 5rem;
+    padding: 2.4rem;
 
     &:hover {
       background-color: #ecf6e0;
     }
   }
 
-  &__icon {
+  &__card-icon {
     margin-bottom: 1rem;
 
     & img {
@@ -55,13 +51,11 @@
     }
   }
 
-  &__cardTitle {
-    font-size: 3rem;
-    margin-bottom: 2rem;
+  &__card-title {
+    @include mixin.title-styles(left, #32333e);
   }
 
-  &__cardText {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
+  &__card-text {
+    @include mixin.text-styles;
   }
 }
