@@ -56,8 +56,8 @@ export default function Footer() {
                 <img
                   className={styles["footer__icon"]}
                   src={phoneIcon}
-                  width={36}
-                  height={37.5}
+                  width={34}
+                  height={35.41}
                   alt="phone"
                   aria-hidden="true"
                 />

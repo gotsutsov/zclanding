@@ -16,42 +16,52 @@ export default function BenefitsSection() {
           <ul className={styles["benefitsSection__list"]}>
             <li className={styles["benefitsSection__list-item"]}>
               <img
-                src="images/f1.svg"
-                alt="Check icon"
                 className={styles["benefitsSection__check-icon"]}
+                src="images/f1.svg"
+                width={44}
+                height={42.75}
+                alt="Check icon"
               />
               Спокойствие за своего питомца
             </li>
             <li className={styles["benefitsSection__list-item"]}>
               <img
-                src="images/f1.svg"
-                alt="Check icon"
                 className={styles["benefitsSection__check-icon"]}
+                src="images/f1.svg"
+                width={44}
+                height={42.75}
+                alt="Check icon"
               />
               Радость от разделения опыта по воспитанию четырехлапого члена
               семьи
             </li>
             <li className={styles["benefitsSection__list-item"]}>
               <img
-                src="images/f1.svg"
-                alt="Check icon"
                 className={styles["benefitsSection__check-icon"]}
+                src="images/f1.svg"
+                width={44}
+                height={42.75}
+                alt="Check icon"
               />
               Экономия времени и денег при поиске новых товаров рядом с домом
             </li>
             <li className={styles["benefitsSection__list-item"]}>
               <img
-                src="images/f1.svg"
-                alt="Check icon"
                 className={styles["benefitsSection__check-icon"]}
+                src="images/f1.svg"
+                width={44}
+                height={42.75}
+                alt="Check icon"
               />
               Посещение новых мест для питомцев
             </li>
             <li className={styles["benefitsSection__list-item"]}>
               <img
-                src="images/f1.svg"
-                alt="Check icon"
                 className={styles["benefitsSection__check-icon"]}
+                src="images/f1.svg"
+                width={44}
+                height={42.75}
+                alt="Check icon"
               />
               Общение с единомышленниками
             </li>

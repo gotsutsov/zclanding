@@ -43,14 +43,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 18px;
+    padding: 1.6rem 2.4rem;
+    border: 1px solid #8c8c8d;
     border-radius: 16px;
     background-color: #000000;
     gap: 1rem;
   }
 
   &__contact-text {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
   }
 
   &__contact-link {
@@ -61,13 +63,13 @@
   &__nav {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
     gap: 1rem;
     margin-bottom: 2.4rem;
   }
 
   &__nav-link {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     color: white;
     text-decoration: underline;
 
@@ -92,11 +94,16 @@
 
   &__store-icon {
     width: 24rem;
+    height: 7.111rem;
   }
 
   &__bottom {
     padding: 1.6rem 3.2rem;
     background-color: #1f202a;
+
+    @media (max-width: 575.98px) {
+      padding: 16px 16px;
+    }
   }
 
   &__legal {

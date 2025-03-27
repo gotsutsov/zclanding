@@ -43,7 +43,6 @@
   &__bottom {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
     align-items: center;
     gap: 4rem;
 
@@ -57,7 +56,7 @@
     overflow: hidden;
     border-radius: 16px;
     display: flex;
-    justify-content: center;
+    justify-self: center;
     align-items: center;
   }
 
