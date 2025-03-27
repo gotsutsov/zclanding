@@ -12,12 +12,14 @@ export default function Footer() {
               alt="logo-footer"
             />
           </div>
-          <h2 className={styles["footer__title"]}>Как с нами связаться</h2>
-          <p className={styles["footer__description"]}>
-            Мы будем рады любой обратной связи от вас – можете делиться своим
-            опытом использования приложения, с кем или с чем удалось
-            познакомиться благодаря нему
-          </p>
+          <div className={styles["footer__title-wrapper"]}>
+            <h2 className={styles["footer__title"]}>Как с нами связаться</h2>
+            <p className={styles["footer__description"]}>
+              Мы будем рады любой обратной связи от вас – можете делиться своим
+              опытом использования приложения, с кем или с чем удалось
+              познакомиться благодаря нему
+            </p>
+          </div>
 
           <div className={styles["footer__contact"]}>
             <div className={styles["footer__contact-wrapper"]}>
