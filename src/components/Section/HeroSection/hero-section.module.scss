@@ -12,16 +12,13 @@
   color: #fff;
   margin-bottom: 6.4rem;
 
-  @media (max-width: 991.98px) {
-    background-position: -12rem;
-  }
-
   @media (max-width: 767.98px) {
-    background-position: -18rem;
+    background-position: -70px center;
   }
 
   @media (max-width: 575.98px) {
     padding: 16px 16px;
+    background-position: -125px center;
   }
 
   &__container {
@@ -57,7 +54,10 @@
 
   &__download-label {
     @include mixin.text-styles(_, 700, white);
-    margin-bottom: 1rem;
+
+    & {
+      margin-bottom: 1rem;
+    }
   }
 
   &__download {

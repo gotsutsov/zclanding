@@ -12,59 +12,46 @@ export default function BenefitsSection() {
           </h3>
         </div>
 
-        {/* <div className={styles["benefitsSection__tabs"]}>
-          <button
-            className={`${styles["benefitsSection__tab"]} ${styles["benefitsSection__tab--active"]}`}
-          >
-            <img src="images/buttonicon.svg" alt="Иконка владельцев питомцев" />
-            Владельцы питомцев
-          </button>
-          <button className={styles["benefitsSection__tab"]}>
-            <img src="images/buttonicon2.svg" alt="Иконка для бизнеса" />
-            Для бизнеса
-          </button>
-        </div> */}
-
         <div className={styles["benefitsSection__content"]}>
           <ul className={styles["benefitsSection__list"]}>
-            <li className={styles["benefitsSection__listItem"]}>
+            <li className={styles["benefitsSection__list-item"]}>
               <img
-                src="images/check.svg"
+                src="images/f1.svg"
                 alt="Check icon"
-                className={styles["benefitsSection__checkIcon"]}
+                className={styles["benefitsSection__check-icon"]}
               />
               Спокойствие за своего питомца
             </li>
-            <li className={styles["benefitsSection__listItem"]}>
+            <li className={styles["benefitsSection__list-item"]}>
               <img
-                src="images/check.svg"
+                src="images/f1.svg"
                 alt="Check icon"
-                className={styles["benefitsSection__checkIcon"]}
+                className={styles["benefitsSection__check-icon"]}
               />
               Радость от разделения опыта по воспитанию четырехлапого члена
               семьи
             </li>
-            <li className={styles["benefitsSection__listItem"]}>
+            <li className={styles["benefitsSection__list-item"]}>
               <img
-                src="images/check.svg"
+                src="images/f1.svg"
                 alt="Check icon"
-                className={styles["benefitsSection__checkIcon"]}
+                className={styles["benefitsSection__check-icon"]}
               />
               Экономия времени и денег при поиске новых товаров рядом с домом
             </li>
-            <li className={styles["benefitsSection__listItem"]}>
+            <li className={styles["benefitsSection__list-item"]}>
               <img
-                src="images/check.svg"
+                src="images/f1.svg"
                 alt="Check icon"
-                className={styles["benefitsSection__checkIcon"]}
+                className={styles["benefitsSection__check-icon"]}
               />
               Посещение новых мест для питомцев
             </li>
-            <li className={styles["benefitsSection__listItem"]}>
+            <li className={styles["benefitsSection__list-item"]}>
               <img
-                src="images/check.svg"
+                src="images/f1.svg"
                 alt="Check icon"
-                className={styles["benefitsSection__checkIcon"]}
+                className={styles["benefitsSection__check-icon"]}
               />
               Общение с единомышленниками
             </li>

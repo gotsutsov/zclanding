@@ -35,7 +35,10 @@
 
   &__author {
     @include mixin.text-styles(center, 700);
-    margin-bottom: 1rem;
+
+    & {
+      margin-bottom: 1rem;
+    }
   }
 
   &__stars {
@@ -51,7 +54,10 @@
 
   &__text {
     @include mixin.text-styles(center);
-    margin-bottom: auto;
+
+    & {
+      margin-bottom: auto;
+    }
   }
 
   &__avatar {
