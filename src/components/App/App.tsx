@@ -19,6 +19,12 @@ export default function App() {
     initYandexMetrika();
   }, []);
 
+  // useEffect(() => {
+  //   if (window.location.hash) {
+  //     window.history.replaceState(null, "", window.location.pathname);
+  //   }
+  // }, []);
+
   return (
     <>
       <Header />

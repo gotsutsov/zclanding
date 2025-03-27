@@ -16,6 +16,8 @@ export default function AvailabilitySection() {
             <img
               className={styles["availabilitySection__image"]}
               src="images/2ip13.png"
+              width={508.8}
+              height={534.31}
               alt="Интерфейс приложения ЗооКлик на экране смартфона"
               loading="lazy"
             />
@@ -26,6 +28,8 @@ export default function AvailabilitySection() {
               <div className={styles["availabilitySection__icon"]}>
                 <img
                   src="images/icon14.svg"
+                  width={93}
+                  height={92}
                   alt="Иконка профиля пользователя"
                 />
               </div>
@@ -35,7 +39,12 @@ export default function AvailabilitySection() {
             </li>
             <li className={styles["availabilitySection__feature"]}>
               <div className={styles["availabilitySection__icon"]}>
-                <img src="images/icon15.svg" alt="Иконка питомца" />
+                <img
+                  src="images/icon15.svg"
+                  width={93}
+                  height={92}
+                  alt="Иконка питомца"
+                />
               </div>
               <p className={styles["availabilitySection__description"]}>
                 Добавление питомцев в профиль пользователя
@@ -43,7 +52,12 @@ export default function AvailabilitySection() {
             </li>
             <li className={styles["availabilitySection__feature"]}>
               <div className={styles["availabilitySection__icon"]}>
-                <img src="images/icon16.svg" alt="Иконка объявления" />
+                <img
+                  src="images/icon16.svg"
+                  width={93}
+                  height={92}
+                  alt="Иконка объявления"
+                />
               </div>
               <p className={styles["availabilitySection__description"]}>
                 Создание тематических объявлений
@@ -51,7 +65,12 @@ export default function AvailabilitySection() {
             </li>
             <li className={styles["availabilitySection__feature"]}>
               <div className={styles["availabilitySection__icon"]}>
-                <img src="images/icon17.svg" alt="Иконка медиафайлов" />
+                <img
+                  src="images/icon17.svg"
+                  width={93}
+                  height={92}
+                  alt="Иконка медиафайлов"
+                />
               </div>
               <p className={styles["availabilitySection__description"]}>
                 Добавление медиа (фото, видео) в профиль пользователя
@@ -59,7 +78,12 @@ export default function AvailabilitySection() {
             </li>
             <li className={styles["availabilitySection__feature"]}>
               <div className={styles["availabilitySection__icon"]}>
-                <img src="images/icon18.svg" alt="Иконка избранного" />
+                <img
+                  src="images/icon18.svg"
+                  width={93}
+                  height={92}
+                  alt="Иконка избранного"
+                />
               </div>
               <p className={styles["availabilitySection__description"]}>
                 Добавление/удаление объявлений из избранного
@@ -69,6 +93,8 @@ export default function AvailabilitySection() {
               <div className={styles["availabilitySection__icon"]}>
                 <img
                   src="images/icon19.svg"
+                  width={93}
+                  height={92}
                   alt="Иконка карты и комментариев"
                 />
               </div>

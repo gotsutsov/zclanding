@@ -17,7 +17,12 @@ export default function AudienceSection() {
         <div className={styles["audienceSection__groups"]}>
           <div className={styles["audienceSection__group"]}>
             <div className={styles["audienceSection__icon"]}>
-              <img src="images/icon5.svg" alt="Владельцы питомцев" />
+              <img
+                src="images/icon5.svg"
+                width={84}
+                height={86}
+                alt="Владельцы питомцев"
+              />
             </div>
             <p className={styles["audienceSection__groupText"]}>
               Владельцы домашних питомцев, просто неравнодушные люди
@@ -26,7 +31,12 @@ export default function AudienceSection() {
 
           <div className={styles["audienceSection__group"]}>
             <div className={styles["audienceSection__icon"]}>
-              <img src="images/icon6.svg" alt="Компании" />
+              <img
+                src="images/icon6.svg"
+                width={87}
+                height={65}
+                alt="Компании"
+              />
             </div>
             <p className={styles["audienceSection__groupText"]}>
               Компании, предоставляющие товары и услуги для животных
@@ -35,7 +45,12 @@ export default function AudienceSection() {
 
           <div className={styles["audienceSection__group"]}>
             <div className={styles["audienceSection__icon"]}>
-              <img src="images/icon7.svg" alt="Благотворительные фонды" />
+              <img
+                src="images/icon7.svg"
+                width={79}
+                height={81}
+                alt="Благотворительные фонды"
+              />
             </div>
             <p className={styles["audienceSection__groupText"]}>
               Благотворительные фонды, приюты, зоозащитники
@@ -48,6 +63,8 @@ export default function AudienceSection() {
             <img
               className={styles["audienceSection__image"]}
               src="images/buba.avif"
+              width={616}
+              height={495.88}
               alt="Владелец питомца с собакой"
               loading="lazy"
             />

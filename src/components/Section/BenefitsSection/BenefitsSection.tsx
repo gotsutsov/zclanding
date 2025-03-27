@@ -61,6 +61,8 @@ export default function BenefitsSection() {
             <img
               className={styles["benefitsSection__image"]}
               src="images/chunya.avif"
+              width={616}
+              height={411.17}
               alt="Девушка с собакой"
               loading="lazy"
             />
