@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo-icon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/images/logo-icon.svg" />
     <link
       rel="preload"
       href="/fonts/Mulish-Regular.woff2"
@@ -17,10 +17,50 @@
       type="font/woff2"
       crossorigin
     />
+    <link
+      rel="preload"
+      href="/images/logo-icon.svg"
+      as="image"
+      type="image/svg+xml"
+    />
+    <link
+      rel="preload"
+      href="/images/logo.svg"
+      as="image"
+      type="image/svg+xml"
+    />
+    <link
+      rel="preload"
+      href="/images/google-play.svg"
+      as="image"
+      type="image/svg+xml"
+    />
+    <link
+      rel="preload"
+      href="/images/app-store.svg"
+      as="image"
+      type="image/svg+xml"
+    />
+    <link
+      rel="preload"
+      href="/images/back-hero.png"
+      as="image"
+      type="image/png"
+    />
+    <link rel="preload" href="/images/ip13.png" as="image" type="image/png" />
+
+    <meta
+      http-equiv="cache-control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+
     <meta
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
+
     <meta
       name="description"
       content="ЗооКлик - Социальный проект для любителей животных"
@@ -34,6 +74,17 @@
   </head>
   <body>
     <div id="root"></div>
+
+    <noscript>
+      <div>
+        <img
+          src="https://mc.yandex.ru/watch/88355745"
+          style="position: absolute; left: -9999px"
+          alt=""
+        />
+      </div>
+    </noscript>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

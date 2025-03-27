@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+
+import { initYandexMetrika } from "../../analytics/yandexMetrika";
 import Header from "../Header";
 import Main from "../Main";
 import HeroSection from "../Section/HeroSection";
@@ -12,6 +15,10 @@ import Footer from "../Footer";
 import ScrollToTopButton from "../ScrollToTopButton";
 
 export default function App() {
+  useEffect(() => {
+    initYandexMetrika();
+  }, []);
+
   return (
     <>
       <Header />
