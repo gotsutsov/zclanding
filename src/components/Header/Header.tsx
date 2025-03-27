@@ -21,6 +21,8 @@ export default function Header() {
           <img
             className={styles["header__logo"]}
             src="images/logo.svg"
+            width={200}
+            height={49.75}
             alt="logo"
           />
         </div>

@@ -28,10 +28,6 @@
     gap: 0.5rem;
 
     @media (max-width: 1199.98px) {
-      gap: 0;
-    }
-
-    @media (max-width: 991.98px) {
       display: none;
     }
   }
@@ -46,10 +42,6 @@
       background-color: #8bc53f;
       border-radius: 0px 2rem 2rem 2rem;
       color: white;
-    }
-
-    @media (max-width: 1199.98px) {
-      padding: 0.6rem 0.8rem;
     }
   }
 }

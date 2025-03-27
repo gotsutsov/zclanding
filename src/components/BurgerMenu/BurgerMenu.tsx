@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
@@ -10,6 +10,20 @@ export default function BurgerMenu() {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
 
+  const menuItems = useMemo(
+    () => [
+      { label: "Приложение", id: "product" },
+      { label: "О проекте", id: "mission" },
+      { label: "Актуальность", id: "relevance" },
+      { label: "Аудитория", id: "audience" },
+      { label: "Преимущества", id: "benefits" },
+      { label: "Наличие", id: "availability" },
+      { label: "Отзывы", id: "reviews" },
+      { label: "Контакты", id: "contact" },
+    ],
+    []
+  );
+
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
   };
@@ -18,59 +32,47 @@ export default function BurgerMenu() {
     setAnchorEl(null);
   };
 
-  const handleScroll = (
-    e: React.MouseEvent<HTMLAnchorElement>,
-    id: string
-  ): void => {
-    e.preventDefault();
+  const handleMenuItemClick = (id: string) => {
     handleClose();
-
-    setTimeout(() => {
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    }, 100);
+    const targetElement = document.getElementById(id);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
   };
-
-  const menuItems = [
-    { label: "Приложение", href: "#product" },
-    { label: "О проекте", href: "#mission" },
-    { label: "Актуальность", href: "#relevance" },
-    { label: "Аудитория", href: "#audience" },
-    { label: "Преимущества", href: "#benefits" },
-    { label: "Наличие", href: "#availability" },
-    { label: "Отзывы", href: "#reviews" },
-    { label: "Контакты", href: "#contact" },
-  ];
 
   return (
     <div className={styles["burger"]}>
       <Button
         sx={buttonStyles}
-        id="basic-button"
-        aria-controls={open ? "basic-menu" : undefined}
+        id="burger-menu-button"
+        aria-controls={open ? "burger-menu" : undefined}
         aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}
+        aria-label="Открыть меню навигации"
         onClick={handleClick}
       >
         <MenuIcon sx={menuIconStyles} />
       </Button>
       <Menu
         slotProps={menuPaperProps}
-        id="basic-menu"
+        id="burger-menu"
         anchorEl={anchorEl}
         open={open}
         onClose={handleClose}
-        disableScrollLock
+        anchorOrigin={{
+          vertical: "bottom",
+          horizontal: "right",
+        }}
+        transformOrigin={{
+          vertical: "top",
+          horizontal: "right",
+        }}
       >
         {menuItems.map((item) => (
           <MenuItem
-            key={item.href}
+            key={item.id}
             sx={menuItemStyles}
-            onClick={(e) => handleScroll(e, item.href.replace("#", ""))}
-            component="a"
-            href={item.href}
+            onClick={() => handleMenuItemClick(item.id)}
           >
             {item.label}
           </MenuItem>
@@ -83,11 +85,14 @@ export default function BurgerMenu() {
 const buttonStyles = {
   backgroundColor: "#8BC43A",
   color: "#fff",
+  minWidth: "auto",
+  padding: "8px",
   "&:hover": {
     backgroundColor: "#e64a19",
   },
   "&:focus": {
     backgroundColor: "#8BC43A",
+    outline: "none",
   },
 };
 
@@ -98,8 +103,10 @@ const menuIconStyles = {
 const menuPaperProps = {
   paper: {
     sx: {
-      width: "50vw",
-      boxShadow: 3,
+      width: "auto",
+      minWidth: "200px",
+      maxWidth: "90vw",
+      maxHeight: "80vh",
     },
   },
 };
@@ -109,6 +116,7 @@ const menuItemStyles = {
   fontSize: "1.8rem",
   fontWeight: 700,
   minHeight: "auto",
+  padding: "10px 20px",
   "&:hover": {
     backgroundColor: "#8BC43A",
     color: "white",

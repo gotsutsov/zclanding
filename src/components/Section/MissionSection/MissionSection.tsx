@@ -17,7 +17,12 @@ export default function MissionSection() {
         <div className={styles["missionSection__cards"]}>
           <article className={styles["missionSection__card"]}>
             <div className={styles["missionSection__card-icon"]}>
-              <img src="images/svg1.svg" alt="Иконка Комочек тепла" />
+              <img
+                src="images/svg1.svg"
+                width={110}
+                height={110}
+                alt="Иконка Комочек тепла"
+              />
             </div>
             <h3 className={styles["missionSection__card-title"]}>
               Комочек тепла
@@ -30,7 +35,12 @@ export default function MissionSection() {
 
           <article className={styles["missionSection__card"]}>
             <div className={styles["missionSection__card-icon"]}>
-              <img src="images/svg2.svg" alt="Иконка Забота о каждом" />
+              <img
+                src="images/svg2.svg"
+                width={110}
+                height={110}
+                alt="Иконка Забота о каждом"
+              />
             </div>
             <h3 className={styles["missionSection__card-title"]}>
               Забота о каждом
@@ -44,7 +54,12 @@ export default function MissionSection() {
 
           <article className={styles["missionSection__card"]}>
             <div className={styles["missionSection__card-icon"]}>
-              <img src="images/svg3.svg" alt="Иконка Бумеранг добра" />
+              <img
+                src="images/svg3.svg"
+                width={110}
+                height={110}
+                alt="Иконка Бумеранг добра"
+              />
             </div>
             <h3 className={styles["missionSection__card-title"]}>
               Бумеранг добра
@@ -57,7 +72,12 @@ export default function MissionSection() {
 
           <article className={styles["missionSection__card"]}>
             <div className={styles["missionSection__card-icon"]}>
-              <img src="images/svg4.svg" alt="Иконка То, что нас объединяет" />
+              <img
+                src="images/svg4.svg"
+                width={110}
+                height={110}
+                alt="Иконка То, что нас объединяет"
+              />
             </div>
             <h3 className={styles["missionSection__card-title"]}>
               То, что нас объединяет

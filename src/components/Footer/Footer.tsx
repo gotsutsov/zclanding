@@ -120,6 +120,8 @@ export default function Footer() {
               <img
                 className={styles["footer__store-icon"]}
                 src={googlePlayIcon}
+                width={200}
+                height={71.11}
                 alt="Google Play"
               />
             </a>
@@ -133,6 +135,8 @@ export default function Footer() {
               <img
                 className={styles["footer__store-icon"]}
                 src={appStoreIcon}
+                width={200}
+                height={71.11}
                 alt="App Store"
               />
             </a>

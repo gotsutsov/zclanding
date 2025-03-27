@@ -26,7 +26,12 @@ export default function RelevanceSection() {
         <div className={styles["relevanceSection__stats"]}>
           <div className={styles["relevanceSection__statItem"]}>
             <div className={styles["relevanceSection__statIcon"]}>
-              <img src="images/icon1.svg" alt="Иконка кота" />
+              <img
+                src="images/icon1.svg"
+                width={100}
+                height={100}
+                alt="Иконка кота"
+              />
             </div>
             <h3 className={styles["relevanceSection__statValue"]}>3 место</h3>
             <p className={styles["relevanceSection__statLabel"]}>
@@ -36,7 +41,12 @@ export default function RelevanceSection() {
 
           <div className={styles["relevanceSection__statItem"]}>
             <div className={styles["relevanceSection__statIcon"]}>
-              <img src="images/icon2.svg" alt="Иконка собаки" />
+              <img
+                src="images/icon2.svg"
+                width={100}
+                height={100}
+                alt="Иконка собаки"
+              />
             </div>
             <h3 className={styles["relevanceSection__statValue"]}>4 место</h3>
             <p className={styles["relevanceSection__statLabel"]}>
@@ -46,7 +56,12 @@ export default function RelevanceSection() {
 
           <div className={styles["relevanceSection__statItem"]}>
             <div className={styles["relevanceSection__statIcon"]}>
-              <img src="images/icon3.svg" alt="Иконка приюта" />
+              <img
+                src="images/icon3.svg"
+                width={100}
+                height={100}
+                alt="Иконка приюта"
+              />
             </div>
             <h3 className={styles["relevanceSection__statValue"]}>200 тысяч</h3>
             <p className={styles["relevanceSection__statLabel"]}>
@@ -56,7 +71,12 @@ export default function RelevanceSection() {
 
           <div className={styles["relevanceSection__statItem"]}>
             <div className={styles["relevanceSection__statIcon"]}>
-              <img src="images/icon4.svg" alt="Иконка животных" />
+              <img
+                src="images/icon4.svg"
+                width={100}
+                height={100}
+                alt="Иконка животных"
+              />
             </div>
             <h3 className={styles["relevanceSection__statValue"]}>650 тысяч</h3>
             <p className={styles["relevanceSection__statLabel"]}>
