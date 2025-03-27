@@ -15,7 +15,11 @@ export default function ProductSection() {
           <ul className={styles["productSection__list"]}>
             <li className={styles["productSection__item"]}>
               <div className={styles["productSection__icon"]}>
-                <img src="images/icon8.svg" alt="Найти пропавшего питомца" />
+                <img
+                  src="images/icon8.svg"
+                  width="93px"
+                  alt="Найти пропавшего питомца"
+                />
               </div>
               <p className={styles["productSection__text"]}>
                 Найти пропавшего питомца
@@ -26,6 +30,7 @@ export default function ProductSection() {
               <div className={styles["productSection__icon"]}>
                 <img
                   src="images/icon11.svg"
+                  width="93px"
                   alt="Помочь в поисках пропавшего животного"
                 />
               </div>
@@ -36,7 +41,11 @@ export default function ProductSection() {
 
             <li className={styles["productSection__item"]}>
               <div className={styles["productSection__icon"]}>
-                <img src="images/icon9.svg" alt="Найти сервисы и абонементы" />
+                <img
+                  src="images/icon9.svg"
+                  width="93px"
+                  alt="Найти сервисы и абонементы"
+                />
               </div>
               <p className={styles["productSection__text"]}>
                 Найти сервис для заботы о мохнатом друге
@@ -47,6 +56,7 @@ export default function ProductSection() {
               <div className={styles["productSection__icon"]}>
                 <img
                   src="images/icon12.svg"
+                  width="93px"
                   alt="Общаться с другими владельцами"
                 />
               </div>
@@ -59,6 +69,7 @@ export default function ProductSection() {
               <div className={styles["productSection__icon"]}>
                 <img
                   src="images/icon10.svg"
+                  width="93px"
                   alt="Рассказать о своём бизнесе и представить услуги"
                 />
               </div>
@@ -69,7 +80,11 @@ export default function ProductSection() {
 
             <li className={styles["productSection__item"]}>
               <div className={styles["productSection__icon"]}>
-                <img src="images/icon13.svg" alt="Найти новых клиентов" />
+                <img
+                  src="images/icon13.svg"
+                  width="93px"
+                  alt="Найти новых клиентов"
+                />
               </div>
               <p className={styles["productSection__text"]}>
                 Найти новых клиентов
