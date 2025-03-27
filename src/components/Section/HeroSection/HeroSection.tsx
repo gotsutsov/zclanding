@@ -31,8 +31,6 @@ export default function HeroSection() {
             <img
               className={styles["hero__download-image"]}
               src="images/google-play.svg"
-              width={240}
-              height={"auto"}
               alt="Google Play"
             />
           </a>
@@ -44,8 +42,6 @@ export default function HeroSection() {
             <img
               className={styles["hero__download-image"]}
               src="images/app-store.svg"
-              width={240}
-              height={"auto"}
               alt="App Store"
             />
           </a>
