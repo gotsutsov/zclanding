@@ -47,11 +47,6 @@
     }
   }
 
-  // &__logo {
-  // width: 240px;
-  // height: 240px;
-  // }
-
   &__download-label {
     @include mixin.text-styles(_, 700, white);
 

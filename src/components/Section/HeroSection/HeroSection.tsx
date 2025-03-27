@@ -14,11 +14,6 @@ export default function HeroSection() {
               <br /> животных
             </h1>
           </div>
-          {/* <img
-            className={styles["hero__logo"]}
-            src="./images/toppet.png"
-            alt="Логотип"
-          /> */}
         </div>
 
         <p className={styles["hero__download-label"]}>Скачать приложение:</p>
@@ -30,7 +25,7 @@ export default function HeroSection() {
           >
             <img
               className={styles["hero__download-image"]}
-              src="images/google-play.svg"
+              src="images/googlePlayIcon.svg"
               alt="Google Play"
             />
           </a>
@@ -41,19 +36,12 @@ export default function HeroSection() {
           >
             <img
               className={styles["hero__download-image"]}
-              src="images/app-store.svg"
+              src="images/appStoreIcon.svg"
               alt="App Store"
             />
           </a>
         </div>
       </div>
-      {/* <div className={styles["hero__preview"]}>
-        <img
-          className={styles["hero__preview-image"]}
-          src="./images/petcare11.png"
-          alt="Превью приложения"
-        />
-      </div> */}
     </section>
   );
 }

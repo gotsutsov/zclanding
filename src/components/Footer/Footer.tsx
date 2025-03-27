@@ -1,3 +1,9 @@
+import logoFooter from "/images/logoFooter.svg";
+import mailIcon from "/images/mailIcon.svg";
+import phoneIcon from "/images/phoneIcon.svg";
+import googlePlayIcon from "/images/googlePlayIcon.svg";
+import appStoreIcon from "/images/appStoreIcon.svg";
+
 import styles from "./footer.module.scss";
 
 export default function Footer() {
@@ -8,8 +14,10 @@ export default function Footer() {
           <div className={styles["footer__logo-wrapper"]}>
             <img
               className={styles["footer__logo"]}
-              src="images/logo-footer.svg"
-              alt="logo-footer"
+              src={logoFooter}
+              width={200}
+              height={49.75}
+              alt="Логотип ZooClick"
             />
           </div>
           <div className={styles["footer__title-wrapper"]}>
@@ -21,32 +29,57 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className={styles["footer__contact"]}>
-            <div className={styles["footer__contact-wrapper"]}>
-              <div className={styles["footer__contact-icon"]}>
-                <img src="images/mail.svg" alt="mail" />
+          <address className={styles["footer__contact"]}>
+            <div className={styles["footer__contact-item"]}>
+              <div className={styles["footer__icon-container"]}>
+                <img
+                  className={styles["footer__icon"]}
+                  src={mailIcon}
+                  width={36}
+                  height={27.69}
+                  alt="mail"
+                  aria-hidden="true"
+                />
               </div>
-              <span>
+              <span className={styles["footer__contact-text"]}>
                 Email:{" "}
-                <a href="mailto:info@zoo-click.com">info@zoo-click.com</a>
+                <a
+                  className={styles["footer__contact-link"]}
+                  href="mailto:info@zoo-click.com"
+                >
+                  info@zoo-click.com
+                </a>
               </span>
             </div>
-            <div className={styles["footer__contact-wrapper"]}>
-              <div className={styles["footer__contact-icon"]}>
-                <img src="images/phone.svg" alt="phone" />
+            <div className={styles["footer__contact-item"]}>
+              <div className={styles["footer__icon-container"]}>
+                <img
+                  className={styles["footer__icon"]}
+                  src={phoneIcon}
+                  width={36}
+                  height={37.5}
+                  alt="phone"
+                  aria-hidden="true"
+                />
               </div>
-              <span>
+              <span className={styles["footer__contact-text"]}>
                 Телефон:{" "}
-                <a href="tel:88004443484">8&nbsp;(800)&nbsp;444-34-84</a>
+                <a
+                  className={styles["footer__contact-link"]}
+                  href="tel:88004443484"
+                >
+                  8&nbsp;(800)&nbsp;444-34-84
+                </a>
               </span>
             </div>
-          </div>
+          </address>
 
           <nav className={styles["footer__nav"]}>
             <a
               className={styles["footer__nav-link"]}
               href="https://zoo-click.com/documents/user_agreement.pdf"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Пользовательское соглашение
             </a>
@@ -54,6 +87,7 @@ export default function Footer() {
               className={styles["footer__nav-link"]}
               href="https://zoo-click.com/documents/personal_data.pdf"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Соглашение об обработке персональных данных
             </a>
@@ -61,6 +95,7 @@ export default function Footer() {
               className={styles["footer__nav-link"]}
               href="https://zoo-click.com/documents/offer.pdf"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Оферта
             </a>
@@ -68,31 +103,36 @@ export default function Footer() {
               className={styles["footer__nav-link"]}
               href="https://zoo-click.com/documents/paid_services.pdf"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Описание платных услуг
             </a>
           </nav>
 
-          <div className={styles["footer__download"]}>
+          <div className={styles["footer__store"]}>
             <a
-              className={styles["footer__download-link"]}
+              className={styles["footer__store-link"]}
               href="https://redirect.appmetrica.yandex.com/serve/965008352398629561"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Скачать приложение в Google Play"
             >
               <img
-                className={styles["footer__download-image"]}
-                src="images/google-play.svg"
+                className={styles["footer__store-icon"]}
+                src={googlePlayIcon}
                 alt="Google Play"
               />
             </a>
             <a
-              className={styles["footer__download-link"]}
+              className={styles["footer__store-link"]}
               href="https://redirect.appmetrica.yandex.com/serve/748835575452230211"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Скачать приложение в App Store"
             >
               <img
-                className={styles["footer__download-image"]}
-                src="images/app-store.svg"
+                className={styles["footer__store-icon"]}
+                src={appStoreIcon}
                 alt="App Store"
               />
             </a>

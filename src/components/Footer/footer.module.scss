@@ -7,6 +7,7 @@
   &__content {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
     padding: 1.6rem 3.2rem;
 
@@ -15,18 +16,15 @@
     }
   }
 
-  &__logo-wrapper {
-    box-sizing: content-box;
-    align-self: center;
-    // padding: 1.6rem 3.2rem;
-    width: 20rem;
+  &__title-wrapper {
+    margin-bottom: 1.6rem;
   }
 
   &__title {
     @include mixin.title-styles(center, white);
 
     @media (max-width: 575.98px) {
-      @include mixin.title-styles(center, white);
+      text-align: center;
     }
   }
 
@@ -41,7 +39,7 @@
     margin-bottom: 1.6rem;
   }
 
-  &__contact-wrapper {
+  &__contact-item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,24 +47,21 @@
     border-radius: 16px;
     background-color: #000000;
     gap: 1rem;
-
-    & span {
-      font-size: 2.2rem;
-
-      & a {
-        color: white;
-        text-decoration: underline;
-      }
-    }
   }
 
-  &__contact-icon {
-    width: 4rem;
+  &__contact-text {
+    font-size: 2.2rem;
+  }
+
+  &__contact-link {
+    color: white;
+    text-decoration: underline;
   }
 
   &__nav {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
     margin-bottom: 2.4rem;
   }
@@ -82,30 +77,26 @@
     }
   }
 
-  &__download {
+  &__store {
     display: flex;
     justify-content: center;
     gap: 1rem;
   }
 
-  &__download-link {
+  &__store-link {
     &:hover {
       opacity: 0.8;
       cursor: alias;
     }
   }
 
-  &__download-image {
+  &__store-icon {
     width: 24rem;
   }
 
   &__bottom {
     padding: 1.6rem 3.2rem;
     background-color: #1f202a;
-  }
-
-  &__icon {
-    width: 50px;
   }
 
   &__legal {
