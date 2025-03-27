@@ -111,6 +111,8 @@ export default function ProductSection() {
           <img
             className={styles["product-section__image"]}
             src={appImage}
+            width={480}
+            height={618.58}
             alt="Приложение ЗооКлик"
           />
         </div>
