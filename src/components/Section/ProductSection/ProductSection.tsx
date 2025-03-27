@@ -17,7 +17,8 @@ export default function ProductSection() {
               <div className={styles["productSection__icon"]}>
                 <img
                   src="images/icon8.svg"
-                  width="93px"
+                  width={93}
+                  height={92}
                   alt="Найти пропавшего питомца"
                 />
               </div>
@@ -30,7 +31,8 @@ export default function ProductSection() {
               <div className={styles["productSection__icon"]}>
                 <img
                   src="images/icon11.svg"
-                  width="93px"
+                  width={93}
+                  height={92}
                   alt="Помочь в поисках пропавшего животного"
                 />
               </div>
@@ -43,7 +45,8 @@ export default function ProductSection() {
               <div className={styles["productSection__icon"]}>
                 <img
                   src="images/icon9.svg"
-                  width="93px"
+                  width={93}
+                  height={92}
                   alt="Найти сервисы и абонементы"
                 />
               </div>
@@ -56,7 +59,8 @@ export default function ProductSection() {
               <div className={styles["productSection__icon"]}>
                 <img
                   src="images/icon12.svg"
-                  width="93px"
+                  width={93}
+                  height={92}
                   alt="Общаться с другими владельцами"
                 />
               </div>
@@ -69,7 +73,8 @@ export default function ProductSection() {
               <div className={styles["productSection__icon"]}>
                 <img
                   src="images/icon10.svg"
-                  width="93px"
+                  width={93}
+                  height={92}
                   alt="Рассказать о своём бизнесе и представить услуги"
                 />
               </div>
@@ -82,7 +87,8 @@ export default function ProductSection() {
               <div className={styles["productSection__icon"]}>
                 <img
                   src="images/icon13.svg"
-                  width="93px"
+                  width={93}
+                  height={92}
                   alt="Найти новых клиентов"
                 />
               </div>
