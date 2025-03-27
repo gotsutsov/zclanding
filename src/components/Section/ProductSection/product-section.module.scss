@@ -1,6 +1,6 @@
 @use "/src/styles/mixins" as mixin;
 
-.productSection {
+.product-section {
   @include mixin.section-styles;
 
   &__container {

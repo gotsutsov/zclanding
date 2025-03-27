@@ -18,6 +18,21 @@ export default function BurgerMenu() {
     setAnchorEl(null);
   };
 
+  const handleScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    id: string
+  ): void => {
+    e.preventDefault();
+    handleClose();
+
+    setTimeout(() => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+  };
+
   const menuItems = [
     { label: "Приложение", href: "#product" },
     { label: "О проекте", href: "#mission" },
@@ -53,7 +68,7 @@ export default function BurgerMenu() {
           <MenuItem
             key={item.href}
             sx={menuItemStyles}
-            onClick={handleClose}
+            onClick={(e) => handleScroll(e, item.href.replace("#", ""))}
             component="a"
             href={item.href}
           >

@@ -1,108 +1,116 @@
+import iconFindPet from "/images/iconFindPet.svg";
+import iconHelpSearch from "/images/iconHelpSearch.svg";
+import iconServices from "/images/iconServices.svg";
+import iconShare from "/images/iconShare.svg";
+import iconBusiness from "/images/iconBusiness.svg";
+import iconClients from "/images/iconClients.svg";
+import appImage from "/images/appImage.png";
+
 import styles from "./product-section.module.scss";
 
 export default function ProductSection() {
   return (
-    <section className={styles["productSection"]} id="product">
-      <div className={styles["productSection__container"]}>
-        <div className={styles["productSection__content"]}>
-          <div className={styles["productSection__title-wrapper"]}>
-            <h2 className={styles["productSection__title"]}>Наш продукт</h2>
-            <h3 className={styles["productSection__subtitle"]}>
+    <section className={styles["product-section"]} id="product">
+      <div className={styles["product-section__container"]}>
+        <div className={styles["product-section__content"]}>
+          <div className={styles["product-section__title-wrapper"]}>
+            <h2 className={styles["product-section__title"]}>Наш продукт</h2>
+            <h3 className={styles["product-section__subtitle"]}>
               Наше приложение — удобный сервис для общения и помощи животным
             </h3>
           </div>
 
-          <ul className={styles["productSection__list"]}>
-            <li className={styles["productSection__item"]}>
-              <div className={styles["productSection__icon"]}>
+          <ul className={styles["product-section__list"]}>
+            <li className={styles["product-section__item"]}>
+              <div className={styles["product-section__icon"]}>
                 <img
-                  src="images/icon8.svg"
+                  src={iconFindPet}
                   width={93}
                   height={92}
                   alt="Найти пропавшего питомца"
                 />
               </div>
-              <p className={styles["productSection__text"]}>
+              <p className={styles["product-section__text"]}>
                 Найти пропавшего питомца
               </p>
             </li>
 
-            <li className={styles["productSection__item"]}>
-              <div className={styles["productSection__icon"]}>
+            <li className={styles["product-section__item"]}>
+              <div className={styles["product-section__icon"]}>
                 <img
-                  src="images/icon11.svg"
+                  src={iconHelpSearch}
                   width={93}
                   height={92}
                   alt="Помочь в поисках пропавшего животного"
                 />
               </div>
-              <p className={styles["productSection__text"]}>
+              <p className={styles["product-section__text"]}>
                 Помочь в поисках пропавшего животного
               </p>
             </li>
 
-            <li className={styles["productSection__item"]}>
-              <div className={styles["productSection__icon"]}>
+            <li className={styles["product-section__item"]}>
+              <div className={styles["product-section__icon"]}>
                 <img
-                  src="images/icon9.svg"
+                  src={iconServices}
                   width={93}
                   height={92}
                   alt="Найти сервисы и абонементы"
                 />
               </div>
-              <p className={styles["productSection__text"]}>
+              <p className={styles["product-section__text"]}>
                 Найти сервис для заботы о мохнатом друге
               </p>
             </li>
 
-            <li className={styles["productSection__item"]}>
-              <div className={styles["productSection__icon"]}>
+            <li className={styles["product-section__item"]}>
+              <div className={styles["product-section__icon"]}>
                 <img
-                  src="images/icon12.svg"
+                  src={iconShare}
                   width={93}
                   height={92}
                   alt="Общаться с другими владельцами"
                 />
               </div>
-              <p className={styles["productSection__text"]}>
+              <p className={styles["product-section__text"]}>
                 Поделиться с другими фотографиями и видео своего питомца
               </p>
             </li>
 
-            <li className={styles["productSection__item"]}>
-              <div className={styles["productSection__icon"]}>
+            <li className={styles["product-section__item"]}>
+              <div className={styles["product-section__icon"]}>
                 <img
-                  src="images/icon10.svg"
+                  src={iconBusiness}
                   width={93}
                   height={92}
                   alt="Рассказать о своём бизнесе и представить услуги"
                 />
               </div>
-              <p className={styles["productSection__text"]}>
+              <p className={styles["product-section__text"]}>
                 Рассказать о своём бизнесе и представить услуги
               </p>
             </li>
 
-            <li className={styles["productSection__item"]}>
-              <div className={styles["productSection__icon"]}>
+            <li className={styles["product-section__item"]}>
+              <div className={styles["product-section__icon"]}>
                 <img
-                  src="images/icon13.svg"
+                  src={iconClients}
                   width={93}
                   height={92}
                   alt="Найти новых клиентов"
                 />
               </div>
-              <p className={styles["productSection__text"]}>
+              <p className={styles["product-section__text"]}>
                 Найти новых клиентов
               </p>
             </li>
           </ul>
         </div>
 
-        <div className={styles["productSection__image-wrapper"]}>
+        <div className={styles["product-section__image-wrapper"]}>
           <img
-            className={styles["productSection__image"]}
-            src="images/ip13.png"
+            className={styles["product-section__image"]}
+            src={appImage}
             alt="Приложение ЗооКлик"
           />
         </div>
