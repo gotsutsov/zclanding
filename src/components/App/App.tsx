@@ -1,6 +1,3 @@
-import { useEffect } from "react";
-
-import { initYandexMetrika } from "../../analytics/yandexMetrika";
 import Header from "../Header";
 import Main from "../Main";
 import HeroSection from "../Section/HeroSection";
@@ -13,11 +10,12 @@ import AvailabilitySection from "../Section/AvailabilitySection";
 import ReviewsSection from "../Section/ReviewsSection";
 import Footer from "../Footer";
 import ScrollToTopButton from "../ScrollToTopButton";
+import { useYandexMetrika } from "../../hooks/useYandexMetrika";
+import { useScrollRestoration } from "../../hooks/useScrollRestoration";
 
 export default function App() {
-  useEffect(() => {
-    initYandexMetrika();
-  }, []);
+  useYandexMetrika();
+  useScrollRestoration();
 
   return (
     <>
